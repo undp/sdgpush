@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>SDG Insights - Countries | UNDP</title>
+    <title>SDG Insights - Reports | UNDP</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="description" content="Driving the future of development.">
     <meta name="keywords" content="UNDP, UN, SDGs">
@@ -61,6 +61,117 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NDW6MV6');
     </script>
+
+
+    <style>
+        .breadcrumb ul {
+            align-items: baseline;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1rem;
+            padding: 0
+        }
+
+        .breadcrumb ul li {
+            display: inline-block;
+            margin: .75rem 1.5rem .75rem 0;
+            padding-left: 0;
+            position: relative
+        }
+
+        .breadcrumb ul li:after {
+            color: #d12800;
+            content: "/";
+            font-weight: 700;
+            position: absolute;
+            /*right: -12px;*/
+            top: 0
+        }
+
+        .breadcrumb ul li:first-of-type {
+            margin-left: 0
+        }
+
+        .breadcrumb ul li:last-of-type {
+            font-weight: 600;
+            letter-spacing: .03em;
+            margin-right: 0;
+            max-width: calc(100vw - 2rem);
+            text-transform: uppercase
+        }
+
+        .breadcrumb ul li:last-of-type:after {
+            display: none
+        }
+
+        .breadcrumb ul li a {
+            background: none;
+            color: #d12800;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+            transition: opacity .2s ease
+        }
+
+        .breadcrumb ul li a:hover {
+            color: #ee402d
+        }
+
+        .breadcrumb.white li a,
+        .breadcrumb.white li:after {
+            color: #fff
+        }
+
+        .breadcrumb.white li a:hover {
+            color: #fff;
+            opacity: .7
+        }
+
+        .breadcrumb.white li:last-of-type,
+        .breadcrumb.white:last-of-type {
+            color: #fff
+        }
+
+        [dir=rtl] .breadcrumb ul {
+            padding: 0
+        }
+
+        [dir=rtl] .breadcrumb li {
+            margin: .75rem 0 .75rem 1.5rem;
+            padding-right: 0
+        }
+
+        [dir=rtl] .breadcrumb li a {
+            margin: 0
+        }
+
+        [dir=rtl] .breadcrumb li:first-of-type {
+            margin-left: 1.5rem;
+            margin-right: 0
+        }
+
+        [dir=rtl] .breadcrumb li:last-of-type {
+            margin-left: 0;
+            margin-right: 0
+        }
+
+        [dir=rtl] .breadcrumb li:after {
+            left: -14px;
+            right: unset;
+            top: 63%;
+            -webkit-transform: translateY(-63%) rotate(140deg);
+            -moz-transform: translateY(-63%) rotate(140deg);
+            -ms-transform: translateY(-63%) rotate(140deg);
+            -o-transform: translateY(-63%) rotate(140deg);
+            transition: translate(0, -63%) rotate(140deg)
+        }
+
+        :lang(my) .breadcrumb li:last-of-type {
+            font-size: 1rem
+        }
+    </style>
+
 </head>
 
 <body style="
@@ -75,11 +186,11 @@
 
 
 
-    <header style="z-index: 999;">
+    <header style="z-index: 999;" id="main-header">
         <div class="grid-container">
             <div class="grid-x align-justify">
                 <div class="small-2 medium-1 cell">
-                    <a href="https://www.undp.org" style="background-image: none;">
+                    <a href="https://www.sdgpush.undp.org" style="background-image: none;">
                         <img src="assets/img/undp-logo-white.svg" width="60" alt="UNDP logo">
                     </a>
                 </div>
@@ -88,6 +199,15 @@
             </div>
         </div>
     </header>
+
+    <style>
+        @media screen and (max-width: 768px) {
+            #reports-hero {
+                padding-top: 2rem;
+            }
+        }
+    </style>
+
 
     <div class="grid-y grid-frame align-center cover section-00-cover" id="toc0" data-magellan-target="toc0" style="z-index: 50;">
 
@@ -99,121 +219,9 @@
         <div class="cell">
             <div class="grid-container">
                 <div class="grid-x">
-                    <div class="small-12 medium-8 large-12 cell">
+                    <div class="small-12 medium-12 large-12 cell" id="reports-hero">
 
-
-                        <style>
-                            .breadcrumb ul {
-                                align-items: baseline;
-                                display: flex;
-                                flex-wrap: wrap;
-                                font-size: 1rem;
-                                padding: 0
-                            }
-
-                            .breadcrumb ul li {
-                                display: inline-block;
-                                margin: .75rem 1.5rem .75rem 0;
-                                padding-left: 0;
-                                position: relative
-                            }
-
-                            .breadcrumb ul li:after {
-                                color: #d12800;
-                                content: "/";
-                                font-weight: 700;
-                                position: absolute;
-                                /*right: -12px;*/
-                                top: 0
-                            }
-
-                            .breadcrumb ul li:first-of-type {
-                                margin-left: 0
-                            }
-
-                            .breadcrumb ul li:last-of-type {
-                                font-weight: 600;
-                                letter-spacing: .03em;
-                                margin-right: 0;
-                                max-width: calc(100vw - 2rem);
-                                text-transform: uppercase
-                            }
-
-                            .breadcrumb ul li:last-of-type:after {
-                                display: none
-                            }
-
-                            .breadcrumb ul li a {
-                                background: none;
-                                color: #d12800;
-                                font-size: 1rem;
-                                font-weight: 600;
-                                letter-spacing: .03em;
-                                text-transform: uppercase;
-                                transition: opacity .2s ease
-                            }
-
-                            .breadcrumb ul li a:hover {
-                                color: #ee402d
-                            }
-
-                            .breadcrumb.white li a,
-                            .breadcrumb.white li:after {
-                                color: #fff
-                            }
-
-                            .breadcrumb.white li a:hover {
-                                color: #fff;
-                                opacity: .7
-                            }
-
-                            .breadcrumb.white li:last-of-type,
-                            .breadcrumb.white:last-of-type {
-                                color: #fff
-                            }
-
-                            [dir=rtl] .breadcrumb ul {
-                                padding: 0
-                            }
-
-                            [dir=rtl] .breadcrumb li {
-                                margin: .75rem 0 .75rem 1.5rem;
-                                padding-right: 0
-                            }
-
-                            [dir=rtl] .breadcrumb li a {
-                                margin: 0
-                            }
-
-                            [dir=rtl] .breadcrumb li:first-of-type {
-                                margin-left: 1.5rem;
-                                margin-right: 0
-                            }
-
-                            [dir=rtl] .breadcrumb li:last-of-type {
-                                margin-left: 0;
-                                margin-right: 0
-                            }
-
-                            [dir=rtl] .breadcrumb li:after {
-                                left: -14px;
-                                right: unset;
-                                top: 63%;
-                                -webkit-transform: translateY(-63%) rotate(140deg);
-                                -moz-transform: translateY(-63%) rotate(140deg);
-                                -ms-transform: translateY(-63%) rotate(140deg);
-                                -o-transform: translateY(-63%) rotate(140deg);
-                                transition: translate(0, -63%) rotate(140deg)
-                            }
-
-                            :lang(my) .breadcrumb li:last-of-type {
-                                font-size: 1rem
-                            }
-                        </style>
-
-
-                        <span class="breadcrumb white inviewport">
-
+                        <span class="breadcrumb white inviewport" id="hero-text">
                             <ul style="margin-left: 0;">
                                 <li><a href="index.html" aria-label="Home">SDG PUSH</a></li>
                                 <li aria-current="Page title">REPORTS</li>
@@ -234,13 +242,12 @@
                 </div>
             </div>
         </div>
-        <div class="scroller">
+        <div class="scroller hide-for-small-only">
             <a href="#toc1" data-smooth-scroll style="background-image: none;">
                 <img src="assets/img/chevron.svg" width="45" alt="arrow down">
             </a>
         </div>
     </div>
-
 
 
 
@@ -271,12 +278,12 @@
                         </a>
                     </div>
 
-                    <div class="flag">
+                    <!-- <div class="flag">
                         <a href="flag_link_4">
                             <img src="assets/img/flags/Bahrain.svg" alt="Flag of Bahrain">
                             <div class="country-name">Bahrain</div>
                         </a>
-                    </div>
+                    </div>-->
 
                     <div class="flag">
                         <a href="flag_link_5">
@@ -296,6 +303,15 @@
                         <a href="flag_link_7">
                             <img src="assets/img/flags/Bhutan.svg" alt="Flag of Bhutan">
                             <div class="country-name">Bhutan</div>
+                        </a>
+                    </div>
+
+
+                    <div class="flag inactive-flag">
+                        <a href="">
+                            <img src="assets/img/flags/Bolivia.svg" alt="Flag of Bolivia">
+                            <div class="country-name">Bolivia</div>
+                            <div class="overlay-text text-extrabold">NOT YET PUBLISHED</div>
                         </a>
                     </div>
 
@@ -336,8 +352,8 @@
 
                     <div class="flag">
                         <a href="flag_link_1">
-                            <img src="assets/img/flags/Cape_Verde.svg" alt="Flag of Cape Verde">
-                            <div class="country-name">Cape Verde</div>
+                            <img src="assets/img/flags/Cape_Verde.svg" alt="Flag of Cabo Verde">
+                            <div class="country-name">Cabo Verde</div>
                         </a>
                     </div>
 
@@ -439,12 +455,12 @@
                         </a>
                     </div>
 
-                    <div class="flag">
+                    <!-- <div class="flag">
                         <a href="flag_link_16">
                             <img src="assets/img/flags/Eritrea.svg" alt="Flag of Eritrea">
                             <div class="country-name">Eritrea</div>
                         </a>
-                    </div>
+                    </div>-->
 
                     <div class="flag">
                         <a href="flag_link_17">
@@ -623,8 +639,8 @@
 
                     <div class="flag">
                         <a href="flag_link_9">
-                            <img src="assets/img/flags/Moldova.svg" alt="Flag of Moldova">
-                            <div class="country-name">Moldova</div>
+                            <img src="assets/img/flags/Moldova.svg" alt="Flag of Republic of Moldova">
+                            <div class="country-name">Republic of Moldova</div>
                         </a>
                     </div>
 
@@ -663,12 +679,12 @@
                         </a>
                     </div>
 
-                    <div class="flag">
+                    <!--<div class="flag">
                         <a href="flag_link_15">
                             <img src="assets/img/flags/Niger.svg" alt="Flag of Niger">
                             <div class="country-name">Niger</div>
                         </a>
-                    </div>
+                    </div>-->
 
                     <div class="flag">
                         <a href="flag_link_16">
@@ -803,6 +819,15 @@
                         </a>
                     </div>
 
+                    
+                     <div class="flag">
+                        <a href="flag_link_18">
+                            <img src="assets/img/flags/Syria.svg" alt="Flag of Syrian Arab Republic">
+                            <div class="country-name">Syrian Arab Republic</div>
+                        </a>
+                    </div>
+
+                    
                     <div class="flag">
                         <a href="flag_link_19">
                             <img src="assets/img/flags/Tajikistan.svg" alt="Flag of Tajikistan">
@@ -812,8 +837,8 @@
 
                     <div class="flag">
                         <a href="flag_link_20">
-                            <img src="assets/img/flags/Tanzania.svg" alt="Flag of Tanzania">
-                            <div class="country-name">Tanzania</div>
+                            <img src="assets/img/flags/Tanzania.svg" alt="Flag of United Republic of Tanzania">
+                            <div class="country-name">United Republic of Tanzania</div>
                         </a>
                     </div>
 
@@ -821,6 +846,13 @@
                         <a href="flag_link_21">
                             <img src="assets/img/flags/Thailand.svg" alt="Flag of Thailand">
                             <div class="country-name">Thailand</div>
+                        </a>
+                    </div>
+                    
+                     <div class="flag">
+                        <a href="flag_link_21">
+                            <img src="assets/img/flags/Timor_Leste.svg" alt="Flag of Timor Leste">
+                            <div class="country-name">Timor Leste</div>
                         </a>
                     </div>
 
@@ -884,8 +916,8 @@
 
                     <div class="flag">
                         <a href="flag_link_4">
-                            <img src="assets/img/flags/Vietnam.svg" alt="Flag of Vietnam">
-                            <div class="country-name">Vietnam</div>
+                            <img src="assets/img/flags/Vietnam.svg" alt="Flag of Viet Nam">
+                            <div class="country-name">Viet Nam</div>
                         </a>
                     </div>
 
@@ -1014,94 +1046,25 @@
 
     <!-- SDGi UNGA 2023 -->
     <script>
-        const countries = [
-            "Kyrgyzstan",
-            "Malawi",
-            "Philippines",
-            "Chile",
-            "Sri Lanka",
-            "Egypt",
-            "everyone",
-            "El Salvador",
-            "Senegal",
-            "Guinea-Bissau",
-            "Bangladesh",
-            "Eritrea",
-            "Guinea",
-            "everyone",
-            "South Africa",
-            "Mauritius",
-            "Zambia",
-            "Chad",
-            "Tajikistan",
-            "Mozambique",
-            "everyone",
-            "Djibouti",
-            "Indonesia",
-            "Cuba",
-            "Maldives",
-            "Sierra Leone",
-            "Botswana",
-            "everyone",
-            "Côte d'Ivoire",
-            "Tunisia",
-            "Bahrain",
-            "Nigeria",
-            "Angola",
-            "Zimbabwe",
-            "everyone",
-            "Vietnam",
-            "Equatorial Guinea",
-            "São Tomé and Príncipe",
-            "Ethiopia",
-            "Azerbaijan",
-            "Kenya",
-            "everyone",
-            "Namibia",
-            "Panama",
-            "Mali",
-            "Burundi",
-            "Eswatini",
-            "Mauritania",
-            "everyone",
-            "Benin",
-            "Togo",
-            "Gambia",
-            "Bhutan",
-            "Uruguay",
-            "Cameroon",
-            "everyone",
-            "Kuwait",
-            "North Macedonia",
-            "Trinidad and Tobago",
-            "Lesotho",
-            "Rwanda",
-            "Kazakhstan",
-            "everyone",
-            "Samoa",
-            "Nepal",
-            "Georgia",
-            "Uzbekistan",
-            "Costa Rica",
-            "Central African Republic",
-            "everyone",
-            "Iran",
-            "Serbia",
-            "Dominican Republic",
-            "Jordan",
-            "Cape Verde",
-            "Turkey",
-            "Vanuatu",
-            "everyone",
-        ];
-
-
+       const countries = ["Kyrgyzstan", "Malawi", "Philippines", "Chile", "Sri Lanka", "Egypt", "everyone", "El Salvador", "Senegal", "Guinea-Bissau", "Bangladesh", "Timor Leste", "Guinea", "everyone", "South Africa", "Mauritius", "Zambia", "Chad", "Tajikistan", "Mozambique", "everyone", "Djibouti", "Indonesia", "Cuba", "Maldives", "Sierra Leone", "Botswana", "everyone", "Côte d'Ivoire", "Tunisia", "Bahrain", "Nigeria", "Angola", "Zimbabwe", "everyone", "Viet Nam", "Equatorial Guinea", "São Tomé and Príncipe", "Ethiopia", "Azerbaijan", "Kenya", "everyone", "Namibia", "Panama", "Mali", "Burundi", "Eswatini", "Mauritania", "everyone", "Benin", "Togo", "Gambia", "Bhutan", "Uruguay", "Cameroon", "everyone", "Kuwait", "North Macedonia", "Trinidad and Tobago", "Lesotho", "Rwanda", "Kazakhstan", "everyone", "Samoa", "Nepal", "Georgia", "Uzbekistan", "Costa Rica", "Central African Republic", "everyone", "Iran", "Serbia", "Dominican Republic", "Jordan", "Cabo Verde", "Turkey", "Vanuatu", "everyone"];
 
         const dynamicWordElement = document.getElementById("dynamic-word");
         let currentCountryIndex = 0;
 
+        function isMobileDevice() {
+            return window.innerWidth < 768; // Adjust the threshold as needed
+        }
+
         function changeWord() {
             const currentWord = countries[currentCountryIndex];
+
+            // Check if it's a mobile device and if the current word has more than 10 characters
+            if (isMobileDevice() && currentWord.length > 9) {
+                currentCountryIndex = (currentCountryIndex + 1) % countries.length;
+                setTimeout(changeWord, 0); // Skip to the next country
+                return;
+            }
+
             dynamicWordElement.textContent = currentWord;
 
             if (currentWord === "everyone") {
@@ -1125,6 +1088,45 @@
     </script>
 
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+    <script>
+        // Function to update the padding values based on viewport height
+        function updatePadding() {
+            // Get the header element by its ID
+            const header = document.getElementById('main-header');
+
+            // Calculate the height of the header
+            const headerHeight = header.offsetHeight;
+
+            // Calculate the padding values based on viewport height
+            const viewportHeight = window.innerHeight;
+            let paddingTopValue;
+            let paddingBottomValue;
+
+            if (viewportHeight <= 950) { // Apply padding only for small viewport heights
+                paddingTopValue = headerHeight + 250;
+                paddingBottomValue = 50; // You can adjust this value for bottom padding
+            } else { // Reset padding for larger viewport heights
+                paddingTopValue = 0;
+                paddingBottomValue = 0;
+            }
+
+            const divBelowHeader = document.getElementById('reports-hero'); // Replace with the correct ID
+
+            // Apply the calculated padding values
+            divBelowHeader.style.paddingTop = `${paddingTopValue}px`;
+            divBelowHeader.style.paddingBottom = `${paddingBottomValue}px`;
+        }
+
+        // Initial call to set the padding based on viewport height
+        window.addEventListener('load', updatePadding); // Use 'load' event to ensure all elements are ready
+
+        // Add an event listener to update the padding when the window is resized
+        window.addEventListener('resize', updatePadding);
+    </script>
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
 
 
     <script src="assets/js/viewport.min.js"></script>

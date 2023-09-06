@@ -10695,6 +10695,8 @@ footer hr {
 /* Apply the animation to the element with the "hope-animation" ID */
 #hope-animation {
   animation: rotate 60s linear infinite; /* Adjust the duration as needed */
+margin: 0 auto;
+    padding-bottom: 50px;
     
 
 }
@@ -10707,18 +10709,18 @@ footer hr {
 
 
 
-@media (max-width: 40em) {
+@media screen and (max-width:63.99875em) {
         .insights.grid-x {
             flex-direction: column-reverse; /* Swap the order for mobile */
         }
 
         /* Style for left div in mobile view */
         .insights.custom-left {
-            order: 1; /* Change the order for mobile */
+            order: 2; /* Change the order for mobile */
         }
 
         /* Style for right div in mobile view */
         .insights.custom-right {
-            order: 2; /* Change the order for mobile */
+            order: 1; /* Change the order for mobile */
         }
     }

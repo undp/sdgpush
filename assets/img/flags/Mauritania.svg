@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 83.18 48.52"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clippath);}.cls-3{fill:#f4c327;}.cls-4{fill:#3d9635;}.cls-5{clip-path:url(#clippath-1);}</style><clipPath id="clippath"><rect class="cls-1" width="83.18" height="48.52"/></clipPath><clipPath id="clippath-1"><rect class="cls-1" width="83.18" height="48.52"/></clipPath></defs><g id="Layer_1"><g class="cls-2"><rect class="cls-4" width="83.18" height="48.52"/><g class="cls-5"><path class="cls-3" d="M41.59,2.53c8.65,0,15.67,7.02,15.67,15.67s-7.02,15.67-15.67,15.67-15.67-7.02-15.67-15.67,7.02-15.67,15.67-15.67"/><path class="cls-4" d="M26.43,14.15c0,8.38,6.79,15.16,15.16,15.16s15.16-6.79,15.16-15.16V2.02H26.43"/><polygon class="cls-3" points="41.59 8.09 39.72 13.86 42.6 14.79 41.59 8.09"/><polygon class="cls-3" points="41.59 8.09 43.46 13.86 40.58 14.79 41.59 8.09"/><polygon class="cls-3" points="47.36 12.28 41.29 12.28 41.29 15.31 47.36 12.28"/><polygon class="cls-3" points="47.36 12.28 42.45 15.84 40.67 13.39 47.36 12.28"/><polygon class="cls-3" points="35.82 12.28 40.73 15.84 42.51 13.39 35.82 12.28"/><polygon class="cls-3" points="35.82 12.28 41.89 12.28 41.89 15.31 35.82 12.28"/><polygon class="cls-3" points="45.16 19.06 43.28 13.29 40.4 14.23 45.16 19.06"/><polygon class="cls-3" points="45.16 19.06 40.25 15.49 42.03 13.04 45.16 19.06"/><polygon class="cls-3" points="38.03 19.06 42.93 15.49 41.15 13.04 38.03 19.06"/><polygon class="cls-3" points="38.03 19.06 39.9 13.29 42.79 14.23 38.03 19.06"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 83.2 48.5" style="enable-background:new 0 0 83.2 48.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D01C1F;}
+	.st1{fill:#00A95C;}
+	.st2{fill:#FFD700;}
+</style>
+<path class="st0" d="M0,0h83.2v48.5H0V0z"/>
+<path class="st1" d="M0,9.7h83.2v29.1H0V9.7z"/>
+<path class="st2" d="M36.7,18h3.7l1.2-3.5l1.2,3.5h3.7l-3.1,2.2l1.2,3.5l-3.1-2.2l-3.1,2.2l1.2-3.5L36.7,18z M23.4,16.3
+	c1.7,8.3,11.1,13.9,21.2,12.6c7.8-1.1,13.9-6.1,15.2-12.6C59.8,26,51.6,34,41.6,34S23.4,26,23.4,16.3z"/>
+</svg>

@@ -1,6 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 3 2">
-	<title>Flag of the Congo</title>
-	<path fill="#fbde4a" d="m0 0h3v2H0z"/>
-	<path fill="#009543" d="m0 2V0h2z"/>
-	<path fill="#da1a35" d="m3 0v2H1z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 900 528.1" style="enable-background:new 0 0 900 528.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FBDE4A;}
+	.st1{fill:#009543;}
+	.st2{fill:#DA1A35;}
+</style>
+<g>
+	<path class="st0" d="M0-0.6h900V529H0V-0.6z"/>
+	<path class="st1" d="M0,529V-0.6h600L0,529z"/>
+	<path class="st2" d="M900-0.6V529H300L900-0.6z"/>
+</g>
 </svg>

@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -42,6 +43,8 @@
     <link rel="stylesheet" href="assets/css/tab.min.css" />
     <link rel="stylesheet" href="tab.min.css" />
     <link rel="stylesheet" href="tabs-partnerships.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.0.0/scrollama.min.js"></script>
+
 
 
     <script>
@@ -66,11 +69,12 @@
 
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDW6MV6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <header style="z-index: 999;">
+
+    <header style="z-index: 999;" id="main-header">
         <div class="grid-container">
             <div class="grid-x align-justify">
                 <div class="small-2 medium-1 cell">
-                    <a href="https://www.undp.org" style="background-image: none;">
+                    <a href="https://www.sdgpush.undp.org" style="background-image: none;">
                         <img src="assets/img/undp-logo-white.svg" width="60" alt="UNDP logo">
                     </a>
                 </div>
@@ -79,7 +83,7 @@
     </header>
 
 
-    <div class="grid-y grid-frame align-center cover section-00-cover" id="toc0" data-magellan-target="toc0" style="z-index: 50;">
+    <div class="grid-y gird-x grid-frame align-center cover section-00-cover" id="toc0" data-magellan-target="toc0" style="z-index: 50;">
 
         <video loop muted autoplay playsinline poster="assets/img/hero-thumbail.jpg">
             <source src="assets/img/ar-hero.mp4" type="video/mp4">
@@ -89,7 +93,7 @@
         <div class="cell">
             <div class="grid-container">
                 <div class="grid-x">
-                    <div class="small-12 medium-12 large-12 cell">
+                    <div class="small-12 medium-12 large-12 cell" id="hero-text">
 
 
                         <h1 id="changing-text">HOW IS <span id="dynamic-word">EVERYONE</span> <br>DOING?</h1>
@@ -114,6 +118,23 @@
             </a>
         </div>
     </div>
+
+
+    <!-- <script>
+    // Get the header element by its ID
+    const header = document.getElementById('main-header');
+
+    // Calculate the height of the header
+    const headerHeight = header.offsetHeight;
+
+    // Add 50 pixels to the header height and apply it as padding to the div below
+    const paddingValue = headerHeight + 50;
+
+    const divBelowHeader = document.getElementById('hero-text'); // Replace with the correct ID
+    divBelowHeader.style.paddingTop = `${paddingValue}px`;
+</script>-->
+
+
 
     <!-- **********SDG color strip START *********** -->
 
@@ -195,21 +216,15 @@
 
                                     <p>Here are the most important patterns – some encouraging, others needing more attention. Acceleration is powered by <span class="text-extrabold">SDG interlinkages</span>: SDG combinations with the best potential to accelerate progress. This helps countries navigate complex and often colliding development challenges. </p>
 
-
-
-
                                 </div>
                                 <div class="cell small-12 medium-6">
-
-
                                 </div>
 
                             </div>
 
-
                             <!--+++++++++++++++++++++++ GLOBAL INSIGHT 1 +++++++++++++++++-->
 
-                            <div class="insights grid-x grid-padding-x align-middle" style="padding: 80px 0px 50px 0px;">
+                            <div class="insights grid-x grid-padding-x align-middle" style="padding: 60px 0px 50px 0px;">
 
                                 <div class="small-12 medium-12 large-7 cell custom-left">
 
@@ -227,12 +242,12 @@
                                     </a>
                                 </div>
 
-                                <div class="small-12 medium-6 large-5 cell cqustom-right">
-
-                                    <lottie-player src="https://lottie.host/16804ef9-e2c4-48e1-bbea-10786c04fd0c/P3DcYuXQCy.json" background="transparent" speed="0.8" loop autoplay></lottie-player>
+                                
+                                <div class="small-12 medium-8 large-5 cell custom-right">
+                                    <lottie-player src="https://lottie.host/16804ef9-e2c4-48e1-bbea-10786c04fd0c/P3DcYuXQCy.json" background="transparent" speed="0.8" loop autoplay style="text-align: center;"></lottie-player>
                                 </div>
-
-
+                                
+                            
 
 
                             </div>
@@ -241,18 +256,15 @@
 
                             <!--+++++++++++++++++++++++ GLOBAL INSIGHT 2 +++++++++++++++++-->
 
-                            <div class=" grid-x grid-padding-x align-middle" style="padding: 80px 0px 50px 0px;">
+                            <div class=" grid-x grid-padding-x align-middle" style="padding: 60px 0px 50px 0px;">
 
-                                <div class="small-12 medium-12 large-5 cell shrink custom-right">
-
-
+                                <div class="small-12 medium-8 large-5 cell shrink" style="margin-right: auto; margin-left: auto">
                                     <lottie-player src="https://lottie.host/96343282-2f6c-4ad4-8fc3-af1776b2eaf1/YDmYZa7JZf.json" background="transparent" speed="0.5" loop autoplay></lottie-player>
-
                                 </div>
 
 
 
-                                <div class="small-12 medium-12 large-7 cell custom-left">
+                                <div class="small-12 medium-12 large-7 cell">
 
                                     <h3 class="text-extrabold">SHOCK-RESPONSIVE FINANCING<br> THAT CREATES POLICY SPACE</h3>
                                     <p>Current finance systems are undermining sustainable development. Debt overhang is damaging prospects for human development. In the world’s poorest countries, debt servicing costs 2.3 times more than social assistance and 1.4 times more than health.</p><br>
@@ -277,7 +289,7 @@
                             <!--+++++++++++++++++++++++ GLOBAL INSIGHT 3 +++++++++++++++++-->
 
 
-                            <div class="insights grid-x grid-padding-x align-middle" style="padding: 80px 0px 50px 0px;">
+                            <div class="insights grid-x grid-padding-x align-middle" style="padding: 60px 0px 50px 0px;">
 
                                 <div class="small-12 medium-12 large-7 cell custom-left">
 
@@ -297,7 +309,7 @@
 
 
 
-                                <div class="small-12 medium-12 large-5 cell custom-right">
+                                <div class="small-12 medium-8 large-5 cell custom-right" style="text-align: center">
 
                                     <lottie-player src="https://lottie.host/2003a6ac-dd47-412f-92fe-596556ed088d/BxMn22bNiF.json" style="padding: 5%" background="transparent" speed="1" loop autoplay></lottie-player>
                                 </div>
@@ -309,14 +321,14 @@
                             <!--+++++++++++++++++++++++ GLOBAL INSIGHT 4 +++++++++++++++++-->
 
 
-                            <div class=" grid-x grid-padding-x align-middle" style="padding: 80px 0px 50px 0px;">
+                            <div class=" grid-x grid-padding-x align-middle" style="padding: 60px 0px 50px 0px;">
 
-                                <div class="small-12 medium-12 large-5 cell shrink custom-right" id="hope-animation">
+                                <div class="small-12 medium-8 large-5 cell shrink" id="hope-animation" >
                                     <img src="assets/img/hope.svg" alt="">
 
                                 </div>
 
-                                <div class="small-12 medium-12 large-7 cell custom-left">
+                                <div class="small-12 medium-12 large-7 cell">
 
                                     <h3 class="text-extrabold">HOPE MEANS: LEAVING NO ONE BEHIND</h3>
                                     <p>Societies are heterogeneous, with individuals and groups having diverse needs and vulnerabilities. To ensure no one is left behind, development pathways must be equitable and inclusive. This includes inclusive, responsive and quality delivery of public goods and services that address geographic disparities and location-specific needs.</p><br>
@@ -344,6 +356,22 @@
 
                 <!--++++++++++++++++++++++++++++++++++++++++++++++[ ADMINISTRATOR- QUOTE ]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+                <style>
+                    /* Default font size for desktop */
+                    #quote {
+                        font-size: 2.3rem;
+                        font-weight: 700;
+                    }
+
+                    /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+                    @media (max-width: 768px) {
+                        #quote {
+                            font-size: 1.8rem;
+                            /* Adjust the font size for mobile */
+                        }
+                    }
+                </style>
+
 
                 <div id="admin-quote-sdgi" style="position: relative;">
                     <video autoplay muted playsinline loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
@@ -354,7 +382,7 @@
                         <div class="grid-container padded">
                             <div class="grid-x grid-padding-x section align-center">
                                 <div class="cell small-12 medium-12 large-7" style="text-align: center; color: white;">
-                                    <p style="font-size: 2.3rem; font-weight: 700">“Resilience, well-being and sustainability are the three vital ingredients for human development today. The SDGs are <i>the</i> catalyst for inclusive and low carbon growth”<br>
+                                    <p id="quote">“Resilience, well-being and sustainability are the three vital ingredients for human development today. The SDGs are <i>the</i> catalyst for inclusive and low carbon growth”<br>
                                     </p>
                                     <p>
                                         Achim Steiner, Administrator
@@ -388,32 +416,32 @@
 
 
                             <div class="small-12 medium-6 large-3 cell" style="text-align: center">
-
                                 <lottie-player src="https://lottie.host/f1c81809-cf3d-4adc-9bc1-7319fb259805/xAKsNdaDyn.json" background="transparent" speed="1" style="width: 200px; height: 200px; margin: 0 auto; " loop autoplay></lottie-player>
-
                                 <p style="text-align: center; padding: 0px 30px 0px 30px;">Invest in data for better decision-making </p>
                             </div>
 
+
                             <div class="small-12 medium-6 large-3 cell" style="text-align: center">
-
-
-
                                 <lottie-player src="https://lottie.host/a73bd7ad-f2a5-49e0-8b40-d7e79807e918/tZnlMbTYgw.json" background="transparent" speed="1" style="width: 200px; height: 200px;margin: 0 auto; " loop autoplay></lottie-player>
                                 <p style="text-align: center; padding: 0px 30px 0px 30px;">Pursue growth that meets people’s and planetary needs</p>
                             </div>
 
+
                             <div class="small-12 medium-6 large-3 cell" style="text-align: center">
 
                                 <lottie-player src="https://lottie.host/720e6a92-9c51-47ae-8c62-e6d4b599d76f/QDQz1RbP79.json" background="transparent" speed="0.4" style="width: 200px; height: 200px; margin: 0 auto; " loop autoplay></lottie-player>
-
-
                                 <p style="text-align: center; padding: 0px 30px 0px 30px;">Stay ambitious and realistic to achieve the SDGs </p>
                             </div>
 
+
                             <div class="small-12 medium-6 large-3 cell" style="text-align: center">
-                                <img src="assets/img/icon%20placeholder.jpg" alt="" style="height: 200px; opacity: 0.3; padding: 30px">
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+                                <lottie-player src="https://lottie.host/37d41120-641c-430a-9bb0-b020d1315c90/ovh84rqKaq.json" background="transparent" speed="0.7" style="width: 200px; height: 200px; margin: 0 auto; " loop autoplay></lottie-player>
                                 <p style="text-align: center; padding: 0px 30px 0px 30px;">Identify what needs to move faster and what has to stop </p>
                             </div>
+
 
                         </div>
 
@@ -428,43 +456,31 @@
                 </div>
 
 
-                <!--++++++++++++++++++++++++++++++++++++++++++++++ TABS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <div class="grid-container">
-                    <div class="grid-x grid-padding-x section ">
-
+                    <div class="grid-x grid-padding-x section" style="padding-top: 1rem;">
                         <div class="cell">
                             <div class="tabs inviewport" data-viewport="true">
-                                <ul data-deep-link="true" data-tabs="true" id="tablist_1" role="tablist" style="margin-left: 0;">
+                                <ul data-deep-link="true" data-tabs="true" id="tablist_1" role="tablist" style="margin-left: 0; margin-bottom: 4%">
                                     <li class="tabs-title is-active">
-                                        <a href="#tab-1" aria-selected="true">DECENT WORK FOR ALL</a>
-                                    </li>
-
-                                    <li class="tabs-title">
-                                        <a href="#tab-2" aria-selected="true">INSTITUTIONS THAT DELIVER FOR PEOPLE AND PLANET
-
-                                        </a>
+                                        <a href="#tab-1" id="tab-link-1" aria-selected="true">DECENT WORK FOR ALL</a>
                                     </li>
                                     <li class="tabs-title">
-                                        <a href="#tab-3" aria-selected="true">RESILIENT, SUSTAINABLE CITIES</a>
+                                        <a href="#tab-2" id="tab-link-2" aria-selected="false">EFFECTIVE, ACCOUNTABLE INSTITUTIONS</a>
                                     </li>
-
+                                    <li class="tabs-title">
+                                        <a href="#tab-3" id="tab-link-3" aria-selected="false">RESILIENT, SUSTAINABLE CITIES</a>
+                                    </li>
                                 </ul>
 
-
                                 <div class="tabs-content" data-tabs-content="tablist_1">
-
-                                    <!------------------- ------------------- ------------------- TAB 1 ------------------- ------------------- ------------------>
-
-
+                                    <!-- ++++++++++++++++++++++++++++++++++++ TAB 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
                                     <div id="tab-1" class="tabs-panel is-active">
-
                                         <div class="grid-x grid-padding-x section align-top">
-
-                                            <div class="cell small-12 medium-12 large-5">
-                                                <img src="assets/img/interlinkage-01.png" style="padding: 20px">
+                                            <div class="cell small-12 medium-12 large-5" id="01-animationContainer">
+                                                <lottie-player data-tab-id="tab-1" id="lottie-tab-1" src="https://lottie.host/3ac27b26-efcb-4b39-8ba5-13c9b2daa08e/4vXKAwRJnv.json" style="marin: 0px 50px; padding-bottom: 10%;" loop background="transparent" speed="0.8"></lottie-player>
                                             </div>
-
+                                            <!-- Rest of Tab 1 content -->
                                             <div class="cell small-12 medium-12 large-7">
 
                                                 <h3 class="text-extrabold" style="color: #A21942">DECENT WORK FOR ALL <span>
@@ -533,33 +549,21 @@
                                                     </div>
                                                 </div>
 
-
-
-
                                             </div>
-
-
                                         </div>
-
                                     </div>
-
-                                    <!------------------- ------------------- ------------------- TAB 2 ------------------- ------------------- ------------------>
+                                    <!-- ++++++++++++++++++++++++++++++++++++ TAB 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
                                     <div id="tab-2" class="tabs-panel">
-
-                                        <div class="grid-x grid-padding-x  section align-top ">
-
-                                            <div class="cell small-12 medium-12 large-5">
-
-                                                <img src="assets/img/interlinkage-02.png" style="padding: 20px">
-
+                                        <div class="grid-x grid-padding-x section align-top">
+                                            <div id="02-animationContainer" class="cell small-12 medium-12 large-5">
+                                                <img src="assets/img/interlinkage-02.svg" style="marin: 0px 50px; padding-bottom: 10%;">
+                                                <!--<lottie-player data-tab-id="tab-2" id="lottie-tab-2" src="https://lottie.host/6cbe702e-64dc-4fe2-988b-a3ac914072df/PwXLSxTQgu.json" background="transparent" speed="0.8"></lottie-player>-->
                                             </div>
-
-
-
+                                            <!-- Rest of Tab 2 content -->
                                             <div class="cell small-12 medium-12 large-7">
 
-                                                <h3 class="text-extrabold" style="color: #00689D">INSTITUTIONS THAT DELIVER FOR PEOPLE AND PLANET
+                                                <h3 class="text-extrabold" style="color: #00689D">EFFECTIVE, ACCOUNTABLE INSTITUTIONS
 
                                                     <span>
                                                         <h5 class="text-extrabold" style="color: black">WHAT DOES THIS TELL US?</h5>
@@ -626,26 +630,21 @@
                                             </div>
 
                                         </div>
-
-
-
                                     </div>
 
-                                    <!------------------- ------------------- ------------------- TAB 3 ------------------- ------------------- ------------------>
+
+                                    <!-- ++++++++++++++++++++++++++++++++++++ TAB 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
 
                                     <div id="tab-3" class="tabs-panel">
-
                                         <div class="grid-x grid-padding-x section align-top">
-
-
-                                            <div class="cell small-12 medium-12 large-5">
-
-                                                <img src="assets/img/interlinkage-03.png" style="padding: 20px">
-
+                                            <div id="03-animationContainer" class="cell small-12 medium-12 large-5">
+                                                <img src="assets/img/interlinkage-03.svg" style="marin: 0px 50px; padding-bottom: 10%;">
+                                                <!--<lottie-player data-tab-id="tab-3" id="lottie-tab-3" src="https://lottie.host/30cd079e-75aa-4168-8f7e-3e9104c27bba/nAssSbJ2jx.json" background="transparent" speed="0.8"></lottie-player>-->
                                             </div>
 
 
-
+                                            <!-- Rest of Tab 3 content -->
                                             <div class="cell small-12 medium-12 large-7">
 
                                                 <h3 class="text-extrabold" style="color: #FD9D24">RESILIENT, SUSTAINABLE CITIES<span>
@@ -663,7 +662,7 @@
                                                     <li>Developing sustainable, resilient, and inclusive infrastructures</li>
                                                     <li>Strengthening resilience and adaptive capacity to climate-related disasters</li>
                                                 </ul>
-                                                
+
                                                 <p>Within the Africa and Latin America & Caribbean region, sustainable cities feature strongly as a catalyst for SDG progress.</p>
 
                                                 <hr style=" border-top: 1px solid #FD9D24;">
@@ -695,355 +694,433 @@
                                                     </div>
                                                 </div>
 
-
-
                                             </div>
 
                                         </div>
-
-                                        <!----------------------- END TAB 3 ------------------------->
-
                                     </div>
                                 </div>
-
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <!--++++++++++++++++++++++++++++++++++++++++++++++[ CALL TO ACTION ]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-            <div class=" grid-container">
-
-                <div class="grid-x grid-padding-x align-middle" style="padding: 10px 0px 100px 0px;">
-
-                    <div class="small-12 medium-12 large-4 cell">
-
-                        <h2>How is your country doing? </h2><br>
-                        <a class="button button-secondary button-external-link" role="button" href="reports.html">
-                            explore the reports
-                            <span class="external-link-animated"><i></i></span>
-                        </a>
-                    </div>
-
-
-                    <div class="small-12 medium-12 large-8 cell shrink">
-
-                        <img src="assets/img/map.gif" alt="">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- **********SDG color strip START *********** -->
-
-            <div style="height: 25px; display: flex;">
-                <div style="flex: 1; background-color: #E5243B;"></div>
-                <div style="flex: 1; background-color: #DDA63A;"></div>
-                <div style="flex: 1; background-color: #4C9F38;"></div>
-                <div style="flex: 1; background-color: #C5192D;"></div>
-                <div style="flex: 1; background-color: #FF3A21;"></div>
-                <div style="flex: 1; background-color: #26BDE2;"></div>
-                <div style="flex: 1; background-color: #FCC30B;"></div>
-                <div style="flex: 1; background-color: #A21942;"></div>
-                <div style="flex: 1; background-color: #FD6925;"></div>
-                <div style="flex: 1; background-color: #DD1367;"></div>
-                <div style="flex: 1; background-color: #FD9D24;"></div>
-                <div style="flex: 1; background-color: #BF8B2E;"></div>
-                <div style="flex: 1; background-color: #3F7E44;"></div>
-                <div style="flex: 1; background-color: #0A97D9;"></div>
-                <div style="flex: 1; background-color: #56C02B;"></div>
-                <div style="flex: 1; background-color: #00689D;"></div>
-                <div style="flex: 1; background-color: #19486A;"></div>
-            </div>
-
-            <!-- **********SDG color strip END *********** -->
-
-
-
-            <!--++++++++++++++++++++++++++++++++++++++++++++++[ CLOSING SECTION ]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-
-            <div class="grid-y grid-frame align-center cover section-00-cover sdgi-hero" id="toc0" data-magellan-target="toc0">
-
-                <video loop muted autoplay playsinline poster="">
-                    <source src="assets/img/footer.mp4" type="video/mp4">
-                    Your browser does not support the HTML5 video element
-                </video>
-
-                <div class="cell" style="text-align: center">
-                    <div class="grid-container">
-                        <div class="grid-x padded">
-                            <div class="small-12 medium-12 large-12 cell ">
-                                <!--<div class="overline">Halfway to 2030:</div><br>-->
-                                <h3><span class="text-extrabold">The insights are powerful.<br>
-                                        The goals are still achievable.</span></h3><br>
-                                <h2>THE FUTURE IS HOPEFUL.</h2>
-                                <h4>#FutureSmartUNDP</h4>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+                <script>
+                    const lottieContainers = document.querySelectorAll('lottie-player');
 
-            </div>
-        </div>
+                    const options = {
+                        root: null, // Use the viewport as the root
+                        rootMargin: "0px", // You can adjust this margin as needed
+                        threshold: 0.5, // Adjust this threshold as needed
+                    };
+
+                    const observer = new IntersectionObserver((entries, observer) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                // Check if the animation is within an active tab
+                                const tabId = entry.target.getAttribute('data-tab-id');
+                                const tabButton = document.querySelector(`[href="#${tabId}"]`);
+                                if (tabButton && tabButton.parentElement.classList.contains('is-active')) {
+                                    entry.target.play();
+                                    observer.unobserve(entry.target); // Stop observing once played
+                                }
+                            }
+                        });
+                    }, options);
+
+                    lottieContainers.forEach((container) => {
+                        observer.observe(container);
+                    });
+
+                    // Add your tab-switching code here (if not already present in your page)
+                </script>
+
+                
+                
+
+                
+
+                <!--++++++++++++++++++++++++++++++++++++++++++++++[ CALL TO ACTION ]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+                <div class=" grid-container">
+
+                    <div class="grid-x grid-padding-x align-middle" style="padding: 10px 0px 100px 0px;">
+
+                        <div class="small-12 medium-12 large-4 cell">
+
+                            <h2>How is your country doing? </h2><br>
+                            <a class="button button-secondary button-external-link" role="button" href="reports.html">
+                                explore the reports
+                                <span class="external-link-animated"><i></i></span>
+                            </a>
+                        </div>
+
+
+                        <div class="small-12 medium-12 large-8 cell">
+                            <video loop muted autoplay playsinline style="width: 100%; margin-top: -5px">
+                                <source src="assets/img/mockups.mp4" type="video/mp4">
+                                Your browser does not support the HTML5 video element
+                            </video>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- **********SDG color strip START *********** -->
+
+                <div style="height: 25px; display: flex;">
+                    <div style="flex: 1; background-color: #E5243B;"></div>
+                    <div style="flex: 1; background-color: #DDA63A;"></div>
+                    <div style="flex: 1; background-color: #4C9F38;"></div>
+                    <div style="flex: 1; background-color: #C5192D;"></div>
+                    <div style="flex: 1; background-color: #FF3A21;"></div>
+                    <div style="flex: 1; background-color: #26BDE2;"></div>
+                    <div style="flex: 1; background-color: #FCC30B;"></div>
+                    <div style="flex: 1; background-color: #A21942;"></div>
+                    <div style="flex: 1; background-color: #FD6925;"></div>
+                    <div style="flex: 1; background-color: #DD1367;"></div>
+                    <div style="flex: 1; background-color: #FD9D24;"></div>
+                    <div style="flex: 1; background-color: #BF8B2E;"></div>
+                    <div style="flex: 1; background-color: #3F7E44;"></div>
+                    <div style="flex: 1; background-color: #0A97D9;"></div>
+                    <div style="flex: 1; background-color: #56C02B;"></div>
+                    <div style="flex: 1; background-color: #00689D;"></div>
+                    <div style="flex: 1; background-color: #19486A;"></div>
+                </div>
+
+                <!-- **********SDG color strip END *********** -->
 
 
 
-        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+                <!--++++++++++++++++++++++++++++++++++++++++++++++[ CLOSING SECTION ]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-        <!-- ++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++-->
 
-        <footer class="footer">
-            <div class="grid-x">
-                <div class="cell medium-10 medium-offset-1">
-                    <div class="grid-x footer-top">
-                        <div class="cell medium-5">
-                            <div class="footer-logo">
-                                <a href="https://www.undp.org">
+                <div class="grid-y grid-frame align-center cover section-00-cover sdgi-hero" id="toc0" data-magellan-target="toc0">
 
-                                    <img src="assets/img/undp-logo-white.svg" alt="UNDP Logo" />
-                                </a>
-                                <h5 tabindex="0">
-                                    United Nations
-                                    <br />
-                                    Development Programme
-                                </h5>
+                    <video loop muted autoplay playsinline poster="">
+                        <source src="assets/img/footer.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 video element
+                    </video>
+
+                    <div class="cell" style="text-align: center">
+                        <div class="grid-container">
+                            <div class="grid-x padded">
+                                <div class="small-12 medium-12 large-12 cell ">
+                                    <!--<div class="overline">Halfway to 2030:</div><br>-->
+                                    <h3><span class="text-extrabold">The insights are powerful.<br>
+                                            The goals are still achievable.</span></h3><br>
+                                    <h2>THE FUTURE IS HOPEFUL.</h2>
+                                    <h4>#FutureSmartUNDP</h4>
+                                </div>
                             </div>
                         </div>
-                        <div class="cell medium-5 show-large">
-                            <ul class="footer-icons">
-                                <li><a href="https://www.facebook.com/UNDP/" class="facebook" title="Facebook">facebook</a></li>
-                                <li><a href="https://www.linkedin.com/company/undp/" class="linkedin" title="LinkedIn">linkedIn</a></li>
-                                <li>
-                                    <a href="https://www.instagram.com/UNDP/" class="instagram" title="Instagram">instagram</a>
-                                </li>
-                                <li><a href="https://twitter.com/undp/" class="twitter" title="Twitter">twitter</a></li>
-                                <li><a href="https://www.youtube.com/UNDP/" class="youtube" title="Youtube">youtube</a></li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="grid-x footer-bottom">
-                        <div class="cell medium-5">
-                            <p tabindex="0">© 2023 United Nations Development Programme</p>
-                        </div>
-                        <div class="cell medium-6">
-                            <ul class="footer-lists">
-                                <li><a href="https://www.undp.org/accountability/audit/investigations">Report fraud, abuse, misconduct</a></li>
-                                <li><a href="https://www.undp.org/accountability/audit/social-and-environmental-compliance-review-and-stakeholder-response-mechanism">Submit social or environmental complaint</a></li>
-                                <li><a href="https://www.undp.org/scam-alert">Scam alert</a></li>
-                                <li><a href="https://www.undp.org/copyright-terms-use">Terms of use</a></li>
-                            </ul>
-                            <div class="show-small">
+
+
+                </div>
+            </div>
+
+
+
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+            <!-- ++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++-->
+
+            <footer class="footer">
+                <div class="grid-x">
+                    <div class="cell medium-10 medium-offset-1">
+                        <div class="grid-x footer-top">
+                            <div class="cell medium-5">
+                                <div class="footer-logo">
+                                    <a href="https://www.undp.org">
+
+                                        <img src="assets/img/undp-logo-white.svg" alt="UNDP Logo" />
+                                    </a>
+                                    <h5 tabindex="0">
+                                        United Nations
+                                        <br />
+                                        Development Programme
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="cell medium-5 show-large">
                                 <ul class="footer-icons">
+                                    <li><a href="https://www.facebook.com/UNDP/" class="facebook" title="Facebook">facebook</a></li>
+                                    <li><a href="https://www.linkedin.com/company/undp/" class="linkedin" title="LinkedIn">linkedIn</a></li>
                                     <li>
-                                        <a href="#" class="facebook" title="Facebook">facebook</a>
+                                        <a href="https://www.instagram.com/UNDP/" class="instagram" title="Instagram">instagram</a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="linkedin" title="LinkedIn">linkedIn</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="instagram" title="Instagram">instagram</a>
-                                    </li>
-                                    <li><a href="#" class="twitter" title="Twitter">twitter</a></li>
-                                    <li><a href="#" class="youtube" title="Youtube">youtube</a></li>
+                                    <li><a href="https://twitter.com/undp/" class="twitter" title="Twitter">twitter</a></li>
+                                    <li><a href="https://www.youtube.com/UNDP/" class="youtube" title="Youtube">youtube</a></li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="grid-x footer-bottom">
+                            <div class="cell medium-5">
+                                <p tabindex="0">© 2023 United Nations Development Programme</p>
+                            </div>
+                            <div class="cell medium-6">
+                                <ul class="footer-lists">
+                                    <li><a href="https://www.undp.org/accountability/audit/investigations">Report fraud, abuse, misconduct</a></li>
+                                    <li><a href="https://www.undp.org/accountability/audit/social-and-environmental-compliance-review-and-stakeholder-response-mechanism">Submit social or environmental complaint</a></li>
+                                    <li><a href="https://www.undp.org/scam-alert">Scam alert</a></li>
+                                    <li><a href="https://www.undp.org/copyright-terms-use">Terms of use</a></li>
+                                </ul>
+                                <div class="show-small">
+                                    <ul class="footer-icons">
+                                        <li>
+                                            <a href="#" class="facebook" title="Facebook">facebook</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="linkedin" title="LinkedIn">linkedIn</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="instagram" title="Instagram">instagram</a>
+                                        </li>
+                                        <li><a href="#" class="twitter" title="Twitter">twitter</a></li>
+                                        <li><a href="#" class="youtube" title="Youtube">youtube</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
 
 
-        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
 
 
-        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-        <!-- SDGi UNGA 2023 -->
-        <script>
-            const countries = ["Kyrgyzstan", "Malawi", "Philippines", "Chile", "Sri Lanka", "Egypt", "everyone", "El Salvador", "Senegal", "Guinea-Bissau", "Bangladesh", "Eritrea", "Guinea", "everyone", "South Africa", "Mauritius", "Zambia", "Chad", "Tajikistan", "Mozambique", "everyone", "Djibouti", "Indonesia", "Cuba", "Maldives", "Sierra Leone", "Botswana", "everyone", "Côte d'Ivoire", "Tunisia", "Bahrain", "Nigeria", "Angola", "Zimbabwe", "everyone", "Vietnam", "Equatorial Guinea", "São Tomé and Príncipe", "Ethiopia", "Azerbaijan", "Kenya", "everyone", "Namibia", "Panama", "Mali", "Burundi", "Eswatini", "Mauritania", "everyone", "Benin", "Togo", "Gambia", "Bhutan", "Uruguay", "Cameroon", "everyone", "Kuwait", "North Macedonia", "Trinidad and Tobago", "Lesotho", "Rwanda", "Kazakhstan", "everyone", "Samoa", "Nepal", "Georgia", "Uzbekistan", "Costa Rica", "Central African Republic", "everyone", "Iran", "Serbia", "Dominican Republic", "Jordan", "Cape Verde", "Turkey", "Vanuatu", "everyone"];
+            <!-- SDGi UNGA 2023 -->
+            <script>
+                const countries = ["Kyrgyzstan", "Malawi", "Philippines", "Chile", "Sri Lanka", "Egypt", "everyone", "El Salvador", "Senegal", "Guinea-Bissau", "Bangladesh", "Timor Leste", "Guinea", "everyone", "South Africa", "Mauritius", "Zambia", "Chad", "Tajikistan", "Mozambique", "everyone", "Djibouti", "Indonesia", "Cuba", "Maldives", "Sierra Leone", "Botswana", "everyone", "Côte d'Ivoire", "Tunisia", "Bahrain", "Nigeria", "Angola", "Zimbabwe", "everyone", "Viet Nam", "Equatorial Guinea", "São Tomé and Príncipe", "Ethiopia", "Azerbaijan", "Kenya", "everyone", "Namibia", "Panama", "Mali", "Burundi", "Eswatini", "Mauritania", "everyone", "Benin", "Togo", "Gambia", "Bhutan", "Uruguay", "Cameroon", "everyone", "Kuwait", "North Macedonia", "Trinidad and Tobago", "Lesotho", "Rwanda", "Kazakhstan", "everyone", "Samoa", "Nepal", "Georgia", "Uzbekistan", "Costa Rica", "Central African Republic", "everyone", "Iran", "Serbia", "Dominican Republic", "Jordan", "Cabo Verde", "Turkey", "Vanuatu", "everyone"];
 
+                const dynamicWordElement = document.getElementById("dynamic-word");
+                let currentCountryIndex = 0;
 
-            const dynamicWordElement = document.getElementById("dynamic-word");
-            let currentCountryIndex = 0;
+                function isMobileDevice() {
+                    return window.innerWidth < 768; // Adjust the threshold as needed
+                }
 
-            function changeWord() {
-                const currentWord = countries[currentCountryIndex];
-                dynamicWordElement.textContent = currentWord;
+                function changeWord() {
+                    const currentWord = countries[currentCountryIndex];
 
-                if (currentWord === "everyone") {
-                    dynamicWordElement.style.animation = "spin-in-out 0.5s";
-                    setTimeout(() => {
+                    // Check if it's a mobile device and if the current word has more than 10 characters
+                    if (isMobileDevice() && currentWord.length > 9) {
+                        currentCountryIndex = (currentCountryIndex + 1) % countries.length;
+                        setTimeout(changeWord, 0); // Skip to the next country
+                        return;
+                    }
+
+                    dynamicWordElement.textContent = currentWord;
+
+                    if (currentWord === "everyone") {
+                        dynamicWordElement.style.animation = "spin-in-out 0.5s";
+                        setTimeout(() => {
+                            dynamicWordElement.style.animation = "spin-out-in 1s";
+                            currentCountryIndex = (currentCountryIndex + 1) % countries.length;
+                            setTimeout(changeWord, 700); // Display "everyone" for 1 second and move to the next country
+                        }, 500); // Show "everyone" for 500ms
+                    } else {
                         dynamicWordElement.style.animation = "spin-out-in 1s";
-                        currentCountryIndex = (currentCountryIndex + 1) % countries.length;
-                        setTimeout(changeWord, 700); // Display "everyone" for 1 second and move to the next country
-                    }, 500); // Show "everyone" for 500ms
-                } else {
-                    dynamicWordElement.style.animation = "spin-out-in 1s";
-                    setTimeout(() => {
-                        dynamicWordElement.style.animation = "spin-in-out 1s";
-                        currentCountryIndex = (currentCountryIndex + 1) % countries.length;
-                        setTimeout(changeWord, 100); // Loop through countries every 350ms for non-"everyone" cases
-                    }, 100);
+                        setTimeout(() => {
+                            dynamicWordElement.style.animation = "spin-in-out 1s";
+                            currentCountryIndex = (currentCountryIndex + 1) % countries.length;
+                            setTimeout(changeWord, 100); // Loop through countries every 350ms for non-"everyone" cases
+                        }, 100);
+                    }
                 }
-            }
 
-            setTimeout(changeWord, 500); // Start the loop after 1 second
-        </script>
-
+                setTimeout(changeWord, 500); // Start the loop after 1 second
+            </script>
 
 
-        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
-        <script>
-            function toggleOptionsList() {
-                var optionsList = document.querySelector('[data-select-options]');
-                optionsList.style.display = optionsList.style.display === 'none' ? 'block' : 'none';
-            }
 
-            document.addEventListener('click', function(event) {
-                var selectBox = document.querySelector('.select-box');
-                var optionsList = document.querySelector('[data-select-options]');
+            <!--<script>
+    // Function to update the padding values based on viewport height
+    function updatePadding() {
+        // Get the header element by its ID
+        const header = document.getElementById('main-header');
 
-                // If the clicked element is outside of the select box
-                if (!selectBox.contains(event.target)) {
-                    // Hide the options list
-                    optionsList.style.display = 'none';
+        // Calculate the height of the header
+        const headerHeight = header.offsetHeight;
+
+        // Calculate the padding values based on viewport height
+        const viewportHeight = window.innerHeight;
+        let paddingTopValue;
+        let paddingBottomValue;
+
+        if (viewportHeight <= 800) { // Adjust this value as needed for small viewport heights
+            paddingTopValue = headerHeight + 50;
+            paddingBottomValue = 50; // You can adjust this value for bottom padding
+        } else {
+            paddingTopValue = 0; // Reset top padding for larger viewport heights
+            paddingBottomValue = 0; // Reset bottom padding for larger viewport heights
+        }
+
+        const divBelowHeader = document.getElementById('hero-text'); // Replace with the correct ID
+        divBelowHeader.style.paddingTop = `${paddingTopValue}px`;
+        divBelowHeader.style.paddingBottom = `${paddingBottomValue}px`;
+    }
+
+    // Initial call to set the padding based on viewport height
+    window.addEventListener('load', updatePadding); // Use 'load' event to ensure all elements are ready
+
+    // Add an event listener to update the padding when the window is resized
+    window.addEventListener('resize', updatePadding);
+</script>-->
+
+
+
+
+
+
+
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+            <script>
+                function toggleOptionsList() {
+                    var optionsList = document.querySelector('[data-select-options]');
+                    optionsList.style.display = optionsList.style.display === 'none' ? 'block' : 'none';
                 }
-            });
-        </script>
 
-        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+                document.addEventListener('click', function(event) {
+                    var selectBox = document.querySelector('.select-box');
+                    var optionsList = document.querySelector('[data-select-options]');
 
-
-        <script>
-            const lottieElements = document.querySelectorAll('.lottie');
-
-            // Configure the Intersection Observer
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const lottieElement = entry.target;
-
-                        // Load and play the Lottie animation
-                        const animationPath = lottieElement.getAttribute('data-animation');
-                        const animation = bodymovin.loadAnimation({
-                            container: lottieElement,
-                            renderer: 'svg',
-                            loop: false, // Play only once
-                            autoplay: true,
-                            path: animationPath,
-                        });
-
-                        // Unobserve the element once animation is played
-                        observer.unobserve(lottieElement);
+                    // If the clicked element is outside of the select box
+                    if (!selectBox.contains(event.target)) {
+                        // Hide the options list
+                        optionsList.style.display = 'none';
                     }
                 });
-            });
+            </script>
 
-            // Observe each Lottie element
-            lottieElements.forEach(element => {
-                observer.observe(element);
-            });
-        </script>
-
-        <script>
-            LottieInteractivity.create({
-                player: "#hand",
-                mode: "scroll",
-                container: "#MyContainerId",
-                actions: [{
-                    visibility: [0, 1.0],
-                    type: 'seek',
-                    frames: [90, 123],
-                }, ]
-            });
-        </script>
+            <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
 
+            <script>
+                const lottieElements = document.querySelectorAll('.lottie');
 
-        <script>
-            LottieInteractivity.create({
-                player: '#hand',
-                mode: 'scroll',
-                actions: [{
-                    visibility: [0, 1],
-                    type: 'seek',
-                    frames: [0, 48],
-                }, ]
-            });
-        </script>
+                // Configure the Intersection Observer
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const lottieElement = entry.target;
 
-        <script>
-            $(function() {
-                modal();
-            });
-        </script>
+                            // Load and play the Lottie animation
+                            const animationPath = lottieElement.getAttribute('data-animation');
+                            const animation = bodymovin.loadAnimation({
+                                container: lottieElement,
+                                renderer: 'svg',
+                                loop: false, // Play only once
+                                autoplay: true,
+                                path: animationPath,
+                            });
 
-
-        <script>
-            $(function() {
-                swiper('.stats-slider');
-            });
-        </script>
-
-        <script>
-            // Intersection Observer setup
-            const container = document.getElementById('fade-sdgi');
-            const observerOptions = {
-                root: null,
-                threshold: 0.1, // Adjust threshold as needed
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        container.classList.add('animated');
-                        observer.unobserve(entry.target);
-                    }
+                            // Unobserve the element once animation is played
+                            observer.unobserve(lottieElement);
+                        }
+                    });
                 });
-            }, observerOptions);
 
-            observer.observe(container);
-        </script>
+                // Observe each Lottie element
+                lottieElements.forEach(element => {
+                    observer.observe(element);
+                });
+            </script>
+
+            <script>
+                LottieInteractivity.create({
+                    player: "#hand",
+                    mode: "scroll",
+                    container: "#MyContainerId",
+                    actions: [{
+                        visibility: [0, 1.0],
+                        type: 'seek',
+                        frames: [90, 123],
+                    }, ]
+                });
+            </script>
 
 
-        <script src="assets/js/app.js"></script>
-        <script src="assets/js/aos.js"></script>
-        <script src="assets/js/swiper.min.js"></script>
-        <script src="assets/js/viewport.min.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js'></script>
-        <script src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
-        <script src="assets/js/slider-script.js"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-        <script src="assets/js/tabs.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-        <script src="assets/js/modal.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
 
-        <script>
-            $(document).foundation();
-        </script>
+            <script>
+                LottieInteractivity.create({
+                    player: '#hand',
+                    mode: 'scroll',
+                    actions: [{
+                        visibility: [0, 1],
+                        type: 'seek',
+                        frames: [0, 48],
+                    }, ]
+                });
+            </script>
+
+            <script>
+                $(function() {
+                    modal();
+                });
+            </script>
+
+
+            <script>
+                $(function() {
+                    swiper('.stats-slider');
+                });
+            </script>
+
+            <script>
+                // Intersection Observer setup
+                const container = document.getElementById('fade-sdgi');
+                const observerOptions = {
+                    root: null,
+                    threshold: 0.1, // Adjust threshold as needed
+                };
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            container.classList.add('animated');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                observer.observe(container);
+            </script>
+
+
+            <script src="assets/js/app.js"></script>
+            <script src="assets/js/header-padding.js"></script>
+            <script src="assets/js/aos.js"></script>
+            <script src="assets/js/swiper.min.js"></script>
+            <script src="assets/js/viewport.min.js"></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js'></script>
+            <script src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
+            <script src="assets/js/slider-script.js"></script>
+            <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+            <script src="assets/js/tabs.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+            <script src="assets/js/modal.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+
+            <script>
+                $(document).foundation();
+            </script>
     </main>
 
 </body>
