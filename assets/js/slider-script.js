@@ -1,1 +1,0 @@
-swiper('.stats-slider');
