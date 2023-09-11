@@ -497,7 +497,7 @@
                                     <div id="tab-1" class="tabs-panel is-active">
                                         <div class="grid-x grid-padding-x section align-top">
                                             <div class="cell small-12 medium-12 large-5" id="01-animationContainer">
-                                                <lottie-player data-tab-id="tab-1" id="lottie-tab-1" src="https://lottie.host/598eccd3-cff9-4788-8906-fa02a0a12ffa/XMPSgKHqo3.json" style="marin: 0px 50px; padding: 0 30px 10% 30px;" loop background="transparent" speed="0.8"></lottie-player>
+                                                <lottie-player data-tab-id="tab-1" id="lottie-tab-1" src="https://lottie.host/598eccd3-cff9-4788-8906-fa02a0a12ffa/XMPSgKHqo3.json" style="padding: 0 30px 10% 30px;" loop background="transparent" speed="0.8"></lottie-player>
                                             </div>
                                             <!-- Rest of Tab 1 content -->
                                             <div class="cell small-12 medium-12 large-7">
@@ -576,8 +576,8 @@
                                     <div id="tab-2" class="tabs-panel">
                                         <div class="grid-x grid-padding-x section align-top">
                                             <div id="02-animationContainer" class="cell small-12 medium-12 large-5">
-                                                <lottie-player data-tab-id="tab-1" id="lottie-tab-1" src="https://lottie.host/8b346750-c2e5-4890-9021-0d1563b53644/TrDhm7ef1K.json" style="marin: 0px 50px; padding: 0 30px 10% 30px;" loop background="transparent" speed="1"></lottie-player>
-                                                <!--<lottie-player data-tab-id="tab-2" id="lottie-tab-2" src="https://lottie.host/6cbe702e-64dc-4fe2-988b-a3ac914072df/PwXLSxTQgu.json" background="transparent" speed="0.8"></lottie-player>-->
+                                                <lottie-player data-tab-id="tab-2" id="lottie-tab-2" src="https://lottie.host/8b346750-c2e5-4890-9021-0d1563b53644/TrDhm7ef1K.json" style="padding: 0 30px 10% 30px;" loop background="transparent" speed="1"></lottie-player>
+
                                             </div>
                                             <!-- Rest of Tab 2 content -->
                                             <div class="cell small-12 medium-12 large-7">
@@ -657,8 +657,8 @@
                                     <div id="tab-3" class="tabs-panel">
                                         <div class="grid-x grid-padding-x section align-top">
                                             <div id="03-animationContainer" class="cell small-12 medium-12 large-5">
-                                                <lottie-player data-tab-id="tab-1" id="lottie-tab-1" src="https://lottie.host/ba3638d8-6ff3-4825-83ff-db30fcfd7aed/IFNoX7B7Ns.json" style="marin: 0px 50px; padding: 0 30px 10% 30px;" loop background="transparent" speed="1"></lottie-player>
-                                                <!--<lottie-player data-tab-id="tab-3" id="lottie-tab-3" src="https://lottie.host/30cd079e-75aa-4168-8f7e-3e9104c27bba/nAssSbJ2jx.json" background="transparent" speed="0.8"></lottie-player>-->
+                                                <lottie-player data-tab-id="tab-3" id="lottie-tab-3" src="https://lottie.host/ba3638d8-6ff3-4825-83ff-db30fcfd7aed/IFNoX7B7Ns.json" style="padding: 0 30px 10% 30px;" loop background="transparent" speed="1"></lottie-player>
+
                                             </div>
 
 
@@ -723,8 +723,8 @@
                                     <div id="tab-4" class="tabs-panel">
                                         <div class="grid-x grid-padding-x section align-top">
                                             <div id="03-animationContainer" class="cell small-12 medium-12 large-5">
-                                                <lottie-player data-tab-id="tab-1" id="lottie-tab-1" src="https://lottie.host/ba3638d8-6ff3-4825-83ff-db30fcfd7aed/IFNoX7B7Ns.json" style="marin: 0px 50px; padding: 0 30px 10% 30px;" loop background="transparent" speed="1"></lottie-player>
-                                                <!--<lottie-player data-tab-id="tab-3" id="lottie-tab-3" src="https://lottie.host/30cd079e-75aa-4168-8f7e-3e9104c27bba/nAssSbJ2jx.json" background="transparent" speed="0.8"></lottie-player>-->
+                                                <lottie-player data-tab-id="tab-4" id="lottie-tab-4" src="https://lottie.host/ba3638d8-6ff3-4825-83ff-db30fcfd7aed/IFNoX7B7Ns.json" style="padding: 0 30px 10% 30px;" loop background="transparent" speed="1"></lottie-player>
+
                                             </div>
 
 
@@ -792,35 +792,37 @@
 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
                 <script>
-                    const lottieContainers = document.querySelectorAll('lottie-player');
+                    // Wrap the code inside a DOMContentLoaded event listener
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const lottieContainers = document.querySelectorAll('lottie-player');
 
-                    const options = {
-                        root: null, // Use the viewport as the root
-                        rootMargin: "0px", // You can adjust this margin as needed
-                        threshold: 0.5, // Adjust this threshold as needed
-                    };
+                        const options = {
+                            root: null, // Use the viewport as the root
+                            rootMargin: "0px", // You can adjust this margin as needed
+                            threshold: 0.5, // Adjust this threshold as needed
+                        };
 
-                    const observer = new IntersectionObserver((entries, observer) => {
-                        entries.forEach((entry) => {
-                            if (entry.isIntersecting) {
-                                // Check if the animation is within an active tab
-                                const tabId = entry.target.getAttribute('data-tab-id');
-                                const tabButton = document.querySelector(`[href="#${tabId}"]`);
-                                if (tabButton && tabButton.parentElement.classList.contains('is-active')) {
-                                    entry.target.play();
-                                    observer.unobserve(entry.target); // Stop observing once played
+                        const observer = new IntersectionObserver((entries, observer) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) {
+                                    // Check if the animation is within an active tab
+                                    const tabId = entry.target.getAttribute('data-tab-id');
+                                    const tabButton = document.querySelector(`[href="#${tabId}"]`);
+                                    if (tabButton && tabButton.parentElement.classList.contains('is-active')) {
+                                        entry.target.play();
+                                        observer.unobserve(entry.target); // Stop observing once played
+                                    }
                                 }
-                            }
+                            });
+                        }, options);
+
+                        lottieContainers.forEach((container) => {
+                            observer.observe(container);
                         });
-                    }, options);
 
-                    lottieContainers.forEach((container) => {
-                        observer.observe(container);
+                        // Add your tab-switching code here (if not already present in your page)
                     });
-
-                    // Add your tab-switching code here (if not already present in your page)
                 </script>
-
 
 
 
