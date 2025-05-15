@@ -1,0 +1,97 @@
+
+.flag-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 50px;
+    margin: 0 auto 10% auto;
+
+}
+
+.flag {
+    text-align: center;
+    position: relative;
+    /* Add this to allow for absolute positioning of shadow */
+    
+    
+}
+
+.flag img {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+    /* Add a soft drop shadow here */
+    
+    
+}
+
+/* Exclude the "nepal" flag from the drop shadow */
+#nepal {
+    box-shadow: none;
+}
+
+.flag:hover img {
+    transform: scale(1.2);
+}
+
+
+.inactive-flag img {
+   opacity: 0.3
+}
+
+.inactive-flag:hover img {
+    transform: scale(1);
+}
+
+
+
+.country-name {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.flag a {
+    color: white;
+    background-image: none;
+}
+
+@media (max-width: 768px) {
+    .flag-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        max-width: 90%;
+    }
+
+    .country-name {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flag-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+.flag .overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initially hide the text */
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.inactive-flag:hover img {
+    transform: scale(0.9);
+}
+
+.flag:hover .overlay-text {
+    display: block; /* Show the text on hover */
+}
