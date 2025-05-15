@@ -1,0 +1,73 @@
+.stats-slider .stats-card.small {
+    max-width: 100%;
+
+/*
+
+    margin-left: 10%;
+    margin-right: 10%;
+*/
+      
+}
+
+.stats-slider .stats-card.large {
+    background-color: white;
+    
+}
+
+
+.stats-slider .stats-card.small:hover,
+.stats-slider .stats-card.small:hover.yellow {
+    background-color: black;
+}
+
+
+.stats-slider .stats-card.mediium:hover,
+.stats-slider .stats-card.medium:hover.yellow {
+    background-color: #0e202a
+}
+
+
+.stats-slider .stats-card.small:hover.red {
+    background-color: #ffbcb7
+}
+
+.stats-slider .stats-card.small:hover.green {
+    background-color: #b8ecb6
+}
+
+.stats-slider .stats-card.small:hover.blue {
+    background-color: #a2daf3
+}
+
+
+.stats-slider .stats-card.medium:hover.orange {
+    background-color: orange;
+}
+
+
+
+
+.stats-slider .stats-card.large:hover.highlights-2022{
+    background-color: #08AEEA;
+    background-image: linear-gradient(200deg, #08AEEA 0%, #2AF598 100%);
+   
+}
+
+.stats-slider .stats-card.small:hover.orange {
+    background-color: orange;
+}
+
+.stats-slider .stats-card.small:hover.gray {
+    background-color: #fafafa
+}
+
+
+@media(min-width:48em) {
+    .stats-slider .swiper-scrollbar {
+        padding-right: 2.75rem
+    }
+
+    [dir=rtl] .stats-slider.swiper-initialized .swiper-scrollbar {
+        padding-left: 2.75rem
+    }
+}
