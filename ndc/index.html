@@ -21,9 +21,10 @@
     <meta property="og:image:height" content="1080">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@undp">
+    
+    
     <link rel="stylesheet" href="https://use.typekit.net/ukl2sym.css">
     <link rel="stylesheet" href="../assets/css/app.css?202109231710">
-
     <link rel="stylesheet" href="../assets/css/content-card.min.css">
     <link rel="stylesheet" href="../assets/css/stats-cards.min.css">
     <link rel="stylesheet" href="../assets/css/buttons.min.css">
@@ -33,40 +34,27 @@
     <link rel="stylesheet" href="../assets/css/tab.min.css" />
     <link rel="stylesheet" href="../tab.min.css" />
     <link rel="stylesheet" href="../tabs-partnerships.css" />
-
-
-
     <link rel="stylesheet" href="../assets/css/stats-card-slider.min.css" />
-    <!--    <link rel="stylesheet" href="base-minimal.min.css" />-->
-    <link rel="stylesheet" href="../assets/css/stats-cards.min.css" />
     <link rel="stylesheet" href="../assets/css/swiper-bundle.css" />
-    <script src="https://unpkg.com/swiper@7.4.1/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/swiper.min.css" />
     <link rel="stylesheet" href="../assets/css/custom-select.min.css">
     <link rel="stylesheet" href="../assets/css/footer.min.css">
-
     <link rel="stylesheet" href="../assets/css/bio-card.min.css">
-    <script src="../assets/js/lottie-player.js"></script>
-    <link rel="stylesheet" href="../assets/css/modal.min.css">
-
-    <!-- 2023 -->
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/base-minimal.min.css">
     <link rel="stylesheet" href="../assets/css/country-site-header.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/language-switcher.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/language-switcher.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mega-menu.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mobile-nav.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu-overflow.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mega-menu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mobile-nav.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu-overflow.min.css">
     <link rel="stylesheet" href="assets/css/tiles.css">
-
     <link rel="stylesheet" href="../assets/css/reports-2024.css">
 
+    <script src="https://unpkg.com/swiper@7.4.1/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="../assets/js/lottie-player.js"></script>
+    
+    
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -156,9 +144,9 @@
 
 
 
-        <div class="grid-container padded">
+        <div class="grid-container">
 
-            <div class="grid-x grid-padding-x  align-bottom ">
+            <div class="grid-x grid-padding-x  align-bottom " style="padding-top: 8%;">
                 <div class="cell small-12 medium-12 large-9">
 
 
@@ -179,7 +167,7 @@
             <div class=" grid-x grid-padding-x align-middle" style="padding: 0px 0px 50px 0px;">
 
                 <div class="small-12 medium-8 large-5 cell shrink" style="margin-right: auto; margin-left: auto">
-                    <img src="../assets/img/placeholder.png">
+                    <img src="../assets/img/globe-animation.gif">
                 </div>
 
                 <div class="small-12 medium-12 large-7 cell">
@@ -622,80 +610,65 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
     <script src="assets/js/slider-script.js"></script>
+
+
+    <!-- Remove duplicate jQuery and Swiper includes above this block if possible -->
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/modal.min.js"></script>
+
     <script>
-        const countries = [
+        // Dynamic word rotation (if used elsewhere in your HTML)
+        const words = [
             "Sustainability", "Innovation", "Transformation", "Resilience", "Equality", "Impact", "Our Goals", "Solutions",
-            "Peace", "Decent work", // Adding Peace and Decent work
-            "Sustainability", "Innovation", "Transformation", "Resilience", "Equality", "Impact", "Our Goals", "Solutions",
-            "Peace", "Decent work", // Adding Peace and Decent work
-            "Sustainability", "Innovation", "Transformation", "Resilience", "Equality", "Impact", "Our Goals", "Solutions",
-            "Peace", "Decent work", // Adding Peace and Decent work
-            "Sustainability", "Innovation", "Transformation", "Resilience", "Equality", "Impact", "Our Goals", "Solutions",
-            "Peace", "Decent work", // Adding Peace and Decent work
-            "Sustainability", "Innovation", "Transformation", "Resilience", "Equality", "Impact", "Our Goals", "Solutions",
-            "Peace", "Decent work", // Adding Peace and Decent work
-            "Sustainability", "Innovation", "Transformation", "Resilience", "Equality", "Impact", "Our Goals", "Solutions",
-            "Peace", "Decent work" // Adding Peace and Decent work
+            "Peace", "Decent work"
         ];
-
-
         const dynamicWordElement = document.getElementById("dynamic-word");
-        let currentCountryIndex = 0;
+        let wordIndex = 0;
 
-        function isMobileDevice() {
-            return window.innerWidth < 768; // Adjust the threshold as needed
+        function isMobile() {
+            return window.innerWidth < 768;
         }
 
-        function changeWord() {
-            const currentWord = countries[currentCountryIndex];
-
-            // Check if it's a mobile device and if the current word has more than 10 characters
-            if (isMobileDevice() && currentWord.length > 9) {
-                currentCountryIndex = (currentCountryIndex + 1) % countries.length;
-                setTimeout(changeWord, 0); // Skip to the next country
+        function rotateWord() {
+            if (!dynamicWordElement) return;
+            let word = words[wordIndex];
+            if (isMobile() && word.length > 9) {
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(rotateWord, 0);
                 return;
             }
-
-            dynamicWordElement.textContent = currentWord;
-
-            if (currentWord === "Our Goals") {
-                dynamicWordElement.style.animation = "spin-in-out 0.5s";
-                setTimeout(() => {
-                    dynamicWordElement.style.animation = "spin-out-in 1s";
-                    currentCountryIndex = (currentCountryIndex + 1) % countries.length;
-                    setTimeout(changeWord, 700); // Display "everyone" for 1 second and move to the next country
-                }, 500); // Show "everyone" for 500ms
-            } else {
+            dynamicWordElement.textContent = word;
+            dynamicWordElement.style.animation = "spin-in-out 0.5s";
+            setTimeout(() => {
                 dynamicWordElement.style.animation = "spin-out-in 1s";
-                setTimeout(() => {
-                    dynamicWordElement.style.animation = "spin-in-out 1s";
-                    currentCountryIndex = (currentCountryIndex + 1) % countries.length;
-                    setTimeout(changeWord, 100); // Loop through countries every 350ms for non-"everyone" cases
-                }, 100);
-            }
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(rotateWord, 700);
+            }, 500);
         }
-
-        setTimeout(changeWord, 500); // Start the loop after 1 second
+        if (dynamicWordElement) setTimeout(rotateWord, 500);
     </script>
+
     <script>
+        // Custom select box toggle
         function toggleOptionsList() {
             var optionsList = document.querySelector('[data-select-options]');
-            optionsList.style.display = optionsList.style.display === 'none' ? 'block' : 'none';
+            if (optionsList) {
+                optionsList.style.display = optionsList.style.display === 'none' ? 'block' : 'none';
+            }
         }
-
         document.addEventListener('click', function (event) {
             var selectBox = document.querySelector('.select-box');
             var optionsList = document.querySelector('[data-select-options]');
-
-            // If the clicked element is outside of the select box
-            if (!selectBox.contains(event.target)) {
-                // Hide the options list
+            if (selectBox && optionsList && !selectBox.contains(event.target)) {
                 optionsList.style.display = 'none';
             }
         });
     </script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
     <script>
+        // Lottie interactivity for specific players
         LottieInteractivity.create({
             player: '#firstLottie',
             mode: "scroll",
@@ -705,8 +678,6 @@
                 frames: [0, 120],
             }]
         });
-    </script>
-    <script>
         LottieInteractivity.create({
             player: '#bubbles',
             mode: "scroll",
@@ -717,53 +688,46 @@
             }]
         });
     </script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="assets/js/modal.min.js"></script>
+
     <script>
+        // Modal initialization
         $(function () {
-            modal();
+            if (typeof modal === "function") modal();
         });
     </script>
+
     <script>
+        // Swiper initialization (if .stats-slider exists)
         $(function () {
-            swiper('.stats-slider');
-        });
-    </script>
-    <script>
-        // Define the custom cursor SVG as a base64 encoded string
-        var customCursorSvgBase64 = "PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA4MSAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik02OS41IDFMNzkuNSA5Ljk5NzgxTTc5LjUgOS45OTc4MUwwIDkuOTk3ODEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+";
-
-        // Decode the base64 string to get the SVG string
-        var customCursorSvg = atob(customCursorSvgBase64);
-
-        // Get the element with the ID "section-10"
-        var section10 = document.getElementById("section-10");
-
-        // Add an event listener to listen for mouseover event
-        section10.addEventListener("mouseover", function () {
-            // Check if the ID is "section-10"
-            if (section10.id === "section-10") {
-                // Modify the SVG string to set the fill color to white
-                var modifiedSvg = customCursorSvg.replace("fill=\"none\"", "fill=\"white\"");
-                // Set the cursor style to a custom cursor with the modified SVG as the URL
-                section10.style.cursor = "url('data:image/svg+xml;base64," + btoa(modifiedSvg) + "'), auto";
-            } else {
-                // Set the cursor style to a custom cursor with the original SVG as the URL
-                section10.style.cursor = "url('data:image/svg+xml;base64," + customCursorSvgBase64 + "'), auto";
+            if (typeof swiper === "function" && $('.stats-slider').length) {
+                swiper('.stats-slider');
             }
         });
-
-
     </script>
 
     <script>
+        // Custom cursor for #section-10
         document.addEventListener('DOMContentLoaded', function () {
-            // Tab click handler
+            var section10 = document.getElementById("section-10");
+            if (!section10) return;
+            var customCursorSvgBase64 = "PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA4MSAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik02OS41IDFMNzkuNSA5Ljk5NzgxTTc5LjUgOS45OTc4MUwwIDkuOTk3ODEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+";
+            var customCursorSvg = atob(customCursorSvgBase64);
+            section10.addEventListener("mouseover", function () {
+                var modifiedSvg = customCursorSvg.replace('fill="none"', 'fill="white"');
+                section10.style.cursor = "url('data:image/svg+xml;base64," + btoa(modifiedSvg) + "'), auto";
+            });
+            section10.addEventListener("mouseout", function () {
+                section10.style.cursor = "auto";
+            });
+        });
+    </script>
+
+    <script>
+        // Tabs functionality
+        document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('#tablist_1 .tabs-title a').forEach(function (tabLink) {
                 tabLink.addEventListener('click', function (e) {
                     e.preventDefault();
-
-                    // Remove active class from all tabs and panels
                     document.querySelectorAll('#tablist_1 .tabs-title').forEach(function (li) {
                         li.classList.remove('is-active');
                         li.querySelector('a').setAttribute('aria-selected', 'false');
@@ -771,8 +735,6 @@
                     document.querySelectorAll('.tabs-panel').forEach(function (panel) {
                         panel.classList.remove('is-active');
                     });
-
-                    // Activate clicked tab and corresponding panel
                     this.parentElement.classList.add('is-active');
                     this.setAttribute('aria-selected', 'true');
                     var panelId = this.getAttribute('href').replace('#', '');
