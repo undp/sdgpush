@@ -12,7 +12,8 @@ body {
 
 h1 {
     font-size: 2em;
-    margin: .67em 0
+    margin: .67em 0;
+    hyphens: none;
 }
 
 hr {
@@ -41,7 +42,8 @@ a {
     background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
     background-position: 100% 100%, -30px 100%;
     background-repeat: no-repeat;
-    background-size: 100% 2px, 100% 2px; /* Updated initial background-size */
+    background-size: 100% 2px, 100% 2px;
+    /* Updated initial background-size */
 }
 
 a:hover {
@@ -52,6 +54,7 @@ a:hover {
     text-decoration: none !important;
     background-image: none;
 }
+
 
 @keyframes lineLoop-animation {
     0% {
@@ -803,7 +806,8 @@ h2 {
     font-size: 2.5rem;
     line-height: 1.4;
     margin-top: 0;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
+
 }
 
 .h3,
@@ -895,7 +899,7 @@ hr {
     margin: 1.25rem auto;
     border-top: 0;
     border-right: 0;
-    /*border-bottom: 1px solid #449cd6;*/
+    border-bottom: 1px solid #449cd6;
     border-left: 0
 }
 
@@ -912,7 +916,7 @@ li {
 }
 
 ul {
-    /*margin-left: 1.25rem;*/
+    margin-left: 1.25rem;
     list-style-type: disc
 }
 
@@ -1204,13 +1208,13 @@ screen and (min-width:64em) {
     margin-right: auto
 }
 
-/*@media print,
+@media print,
 screen and (min-width:40em) {
     .grid-container {
         padding-right: .9375rem;
         padding-left: .9375rem
     }
-}*/
+}
 
 .grid-container.fluid {
     padding-right: 2.3125rem;
@@ -4066,7 +4070,7 @@ screen and (min-width:64em) {
     margin: 0 0 1rem 0;
     padding: .85em 1em;
     border: 1px solid transparent;
-    /*border-radius: 1.25rem;*/
+    border-radius: 1.25rem;
     -webkit-transition: background-color .25s ease-out, color .25s ease-out;
     transition: background-color .25s ease-out, color .25s ease-out;
     font-family: inherit;
@@ -5658,11 +5662,11 @@ screen and (min-width:40em) {
 }
 
 @media (max-width: 1199px) and (min-width: 768px) {
-      .grid-container {
+    .grid-container {
         margin-left: 5%;
         margin-right: 5%;
-      }
     }
+}
 
 @media print,
 screen and (min-width:40em) {
@@ -8103,15 +8107,13 @@ img.fullwidth {
 }
 
 ul {
-    /*margin-left: 1.5rem*/
+    margin-left: 1.5rem
 }
 
 @media print,
 screen and (min-width:40em) {
     ul {
-      margin-left: 1.25rem;
-        font-size: 20px;
-        
+        margin-left: 6.25rem
     }
 }
 
@@ -8769,14 +8771,13 @@ screen and (min-width:40em) {
 
 
 .undpButton .downloadIcon {
-        margin-left: 12px
-           
-    }
+    margin-left: 12px
+}
+
 @media print,
 screen and (min-width:40em) {
     .undpButton .downloadIcon {
         margin-left: 12px
-           
     }
 }
 
@@ -8921,21 +8922,25 @@ screen and (min-width:40em) {
 }*/
 
 
-.section-1-foreword {
+/*.section-1-foreword {
     margin: 0;
     background-image: url(../img/foreword-ai.png), url(../img/foreword-gradient.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, center center;
     background-size: 35%, cover;
+    
+}*/
+
+.section-1-foreword {
+    margin: 0;
+    background: linear-gradient(to bottom, #f66303, #fbf500);
+    /*background-image:  url(../img/foreword-gradient.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
+
 }
 
-/* Apply different styles for mobile devices */
-@media only screen and (max-width: 767px) {
-    .section-1-foreword {
-        background-image: url(../img/foreword-gradient.jpg);
-        background-size: cover;
-    }
-}
 
 
 
@@ -8943,7 +8948,9 @@ screen and (min-width:40em) {
 
 .section-1-foreword .bgLightGray {
     background: #f7f7f7;
-    padding-bottom: 32px
+    padding-bottom: 32px background-color: rgba(250, 250, 250, 0.9);
+
+    backdrop-filter: saturate(200%) blur(15px);
 }
 
 /* Apply different styles for mobile devices */
@@ -9183,23 +9190,8 @@ screen and (min-width:40em) {
 
 
 
-.checklist{
-    
-     list-style-type: none;
-    
-}
 
-
-
-.checklist li::before {
-    content: "\2713"; /* Unicode character for ✓ */
-    margin-right: 0.5em; /* Add spacing between symbol and text */
-}
-
-
-.section-4-nature {
-   
-}
+.section-4-nature {}
 
 .section-4-nature .checklist {
     column-count: 3
@@ -9444,9 +9436,29 @@ screen and (min-width:40em) {
 
 
 .section-7-sdg {
-    background: rgb(10, 37, 108);
+    /*background: rgb(10, 37, 108);
     background: linear-gradient(180deg, rgba(10, 37, 108, 1) 0%, rgba(108, 125, 158, 1) 100%);
-    color: white;
+    color: white;*/
+}
+
+
+.section-7-sdg {
+    .rotate {
+        display: inline-block;
+        animation: rotate 10s linear infinite;
+        /* Adjust the duration (10s) for slower or faster rotation */
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
 }
 
 
@@ -9531,11 +9543,11 @@ screen and (min-width:40em) {
 
 
 .section-9-our-family .host-function {
-    padding: 3% 0% 3% 0%; 
-    color: #449cd6; 
-    font-size: 200%; 
+    padding: 3% 0% 3% 0%;
+    color: #449cd6;
+    font-size: 200%;
     line-height: 2.5rem;
-    
+
 }
 
 
@@ -9545,60 +9557,10 @@ screen and (min-width:40em) {
 }
 
 
-.sdgi-intro {
-    
-    background-color: #132330;
-    color: white;
-}
-
-.section-10-digital-first {
-    /*background-color: #162733;*/
-    color: white;
-
-}
-
-.section-10-bg {
-
-    background-color: #132330;
-
-    /*background-image:
-        url(../img/digital-bg-img.jpg);*/
-
-    background-repeat:
-        no-repeat;
-
-    background-position:
-        bottom right;
-
-    background-size: 100%;
 
 
 
-}
 
-
-.section-10-digital-first {
-  /*cursor: default;*/
-}
-
-.section-10-digital-first #df-slider .stats-slider .stats-card {
-  /*cursor: url(../img/arrow-cursor.png), auto;*/
-}
-
-
-
-/*
-.section-10-digital-first #df-slider .stats-slider {
-
-   
-    cursor: url(../img/arrow-cursor.png), auto !important;
-}
-
-.section-10-digital-first #df-slider .stats-slider .stats-card {
-    
-    cursor: url(../img/arrow-cursor.png), auto !important;
-    
-}*/
 
 .section-11-hdro {}
 
@@ -9667,9 +9629,9 @@ screen and (min-width:40em) {
 }
 
 @media (max-width: 600px) {
-  .section-13-awards video {
-    display: none;
-}
+    .section-13-awards video {
+        display: none;
+    }
 }
 
 
@@ -9918,18 +9880,20 @@ screen and (min-width:40em) {
 
 
 
-
 .section-14-global {
-    background-color: black;
     color: white;
+    position: relative;
+    
 }
 
-.section-14-global {
-    background: url(../img/star-sky-unsplash.jpg) center top/100% #012f50;
-    color: white;
-    background-color: black;
-    position: relative
+/* For medium and small devices */
+@media (max-width:50em) {
+    .section-14-global {
+        position: relative;
+       
+    }
 }
+
 
 .section-14-global .faq {
     background: rgba(247, 247, 247, .8);
@@ -9939,18 +9903,13 @@ screen and (min-width:40em) {
     padding: 24px
 }
 
+
+
 @supports not ((-webkit-backdrop-filter:blur(20px)) or (backdrop-filter:blur(20px))) {
     .section-7-global .faq {
         background: rgba(247, 247, 247, .9)
     }
 }
-
-
-
-
-
-
-
 
 .section-3-innovation .module:nth-of-type(1) .title {
     color: #ea0a8c
@@ -10498,9 +10457,9 @@ screen and (min-width:64em) {
 @media print,
 screen and (min-width:40em) {
     .accordion .accordion-content > div {
-        -webkit-columns: 2;
-        -moz-columns: 2;
-        columns: 2
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1
     }
 }
 
@@ -10616,10 +10575,49 @@ footer hr {
     margin-bottom: 34px
 }
 
+
+.band-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.band {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+.band img {
+    width: auto;
+    height: 70px;
+    padding-right: 40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.band img:last-child {
+    padding-right: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/*
+
 .band-container {
     width: 100%;
     height: 100px;
     overflow: hidden;
+   
+    
 }
 
 .band {
@@ -10646,81 +10644,4 @@ footer hr {
 
 .band img:last-child {
     padding-right: 0;
-}
-
-
-/* Add any styles you want for the heading here */
-@keyframes spin-out {
-  0% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(90deg);
-    opacity: 0;
-  }
-}
-
-@keyframes spin-in {
-  0% {
-    transform: rotateX(270deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(360deg);
-    opacity: 1;
-  }
-}
-
-#dynamic-word {
-  transform-origin: center bottom;
-}
-
-
-.sdgi-hero{
-    background-image: url(/assets/img/hero-dc1.jpg);
-    background-color: #0468B1;
-}
-
-/* Define the animation keyframes at the root level */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Apply the animation to the element with the "hope-animation" ID */
-#hope-animation {
-  animation: rotate 60s linear infinite; /* Adjust the duration as needed */
-margin: 0 auto;
-    padding-bottom: 50px;
-    
-
-}
-
- @media (min-width: 1024px) {
-            #hero-copy {
-                width: 50%;
-            }
-        }
-
-
-
-@media screen and (max-width:63.99875em) {
-        .insights.grid-x {
-            flex-direction: column-reverse; /* Swap the order for mobile */
-        }
-
-        /* Style for left div in mobile view */
-        .insights.custom-left {
-            order: 2; /* Change the order for mobile */
-        }
-
-        /* Style for right div in mobile view */
-        .insights.custom-right {
-            order: 1; /* Change the order for mobile */
-        }
-    }
+}*/

@@ -1,0 +1,438 @@
+                .section-climate-moonshot {
+
+
+                    background-color: #b9ff66;
+                    margin: 0;
+                    background-image: url(../img/moonshots/leaf.png), url(../img/energy-moonshot.jpg);
+                    background-repeat: no-repeat, no-repeat;
+                    background-position: top right, center center;
+                    background-size: 28%, cover;
+
+
+                }
+
+                .section-climate-moonshot h3 {
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: green
+                }
+
+                .section-climate-moonshot h6 {
+
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                    color: green
+                }
+
+
+                .section-elections-moonshot {
+
+                    margin: 0;
+                    background-image: url(../img/moonshots/shield.png), url(../img/moonshots/elections-background-gradient.jpg);
+                    background-repeat: no-repeat, no-repeat;
+                    background-position: top right, center center;
+                    background-size: 23%, cover;
+                }
+
+
+                .section-elections-moonshot h3 {
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: darkblue;
+                }
+
+                .section-elections-moonshot h6 {
+
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                    color: darkblue;
+                }
+
+
+                .section-finance-moonshot {
+
+
+                    background-color: lavender;
+                    margin: 0;
+
+                    background-image: url(../img/moonshots/chart.png), url(../img/moonshots/finance-background-gradient.jpg);
+                    background-repeat: no-repeat, no-repeat;
+                    background-position: top right, center center;
+                    background-size: 28%, cover;
+
+
+                }
+
+
+                .section-finance-moonshot h3 {
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: purple
+                }
+
+                .section-finance-moonshot h4 {
+                    padding-bottom: 5%;
+                    font-weight: 300;
+                    color: purple
+                }
+
+                .section-finance-moonshot h6 {
+
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                    color: purple
+                }
+
+
+
+
+                .moonshot-container {
+                    display: flex;
+                    height: 100%;
+                    /* Adjust the height of the container */
+                }
+
+                .moonshot-content {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    /* Adjust the height of the content */
+                }
+
+                #poverty-highlight {
+                    color: white;
+                    flex: 1;
+                    padding: 40px;
+                    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+                    align-self: center;
+                    border-radius: 20px;
+                   
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+
+                #poverty-highlight h3 {
+                    font-weight: 630;
+                    color: white
+                }
+
+                #energy-highlight h3 {
+                    font-weight: 630
+                }
+
+                #elections-highlight h3 {
+                    font-weight: 630
+                }
+
+                #finance-highlight h3 {
+                    font-weight: 630
+                }
+
+                .image {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-self: center;
+                    /* Align image container to the top */
+                }
+
+
+                .energy-image {
+                    flex: 0.5;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    align-self: flex-end;
+                    /* Align image container to the top */
+                }
+
+                .elections-image {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    align-self: flex-end;
+                    /* Align image container to the top */
+                }
+
+
+
+                .finance-image {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    align-self: flex-end;
+                    /* Align image container to the top */
+                }
+
+
+                /*img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                    
+                    align-self: center;
+                }*/
+
+                @media (max-width: 768px) {
+                    .content {
+                        flex-direction: column;
+                    }
+
+
+                    .image {
+                        width: 100%;
+                    }
+
+                    #poverty-highlight,
+                    #energy-highlight,
+                    #elections-highlight,
+                    #finance-highlight {
+                        border-radius: 20px;
+                        width: 100%
+                    }
+                }
+
+                #energy-highlight {
+
+                    color: white;
+                    flex: 1.2;
+                    padding: 40px;
+                    align-self: bottom;
+                    align-items: bottom;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+                }
+
+
+                #elections-highlight {
+
+                    color: white;
+                    flex: 1.5;
+                    padding: 40px;
+                    align-self: bottom;
+                    align-items: bottom;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    background: radial-gradient(circle at 10% 20%, rgb(7, 121, 222) 0%, rgb(20, 72, 140) 90%);
+                }
+
+                #finance-highlight {
+
+                    color: white;
+                    flex: 1;
+                    padding: 40px;
+                    align-self: bottom;
+                    align-items: bottom;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    background: radial-gradient(circle at 10% 20%, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 90%);
+                }
+
+
+
+                .moonshots-sdgs {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 10px;
+                    /* Adjust this value to change the gap between images */
+                }
+
+                .moonshots-sdgs .grid-item {
+                    width: 100%;
+                    /* Ensures images take up full width of their container */
+                    height: auto;
+                    /* Allows images to adjust their height accordingly */
+                    padding: 10%;
+                }
+
+
+                .section-poverty-moonshot h3 {
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: #e3243d
+                }
+
+                .section-poverty-moonshot {
+
+                    background-color: #f2c7c9;
+                    margin: 0;
+                    background-image: url(../img/moonshots/stairs-edited.png), url(../img/moonshots/poverty-background-gradient.jpg);
+                    background-repeat: no-repeat, no-repeat;
+                    background-position: top right, center center;
+                    background-size: 30%, cover;
+
+                }
+
+
+                /*
+             .button-container {
+    padding: 20px 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.columns {
+    flex: 0 0 calc(25% - 20px);
+    margin-bottom: 0;
+}
+
+.custom-box {
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-image {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 60px;
+    opacity: 0.7;
+}
+
+.box-content {
+    padding-right: 120px;
+    padding-top: 40px;
+}
+
+.custom-box h3 {
+    margin-top: 0;
+}
+
+.learn-more-button {
+    color: white;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+}
+
+
+.custom-box-poverty {
+    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+}
+
+.custom-box-energy {
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.custom-box-elections {
+    background: radial-gradient(circle at 10% 20%, rgb(7, 121, 222) 0%, rgb(20, 72, 140) 90%);
+}
+
+.custom-box-finance {
+    background: linear-gradient(109.6deg, rgb(193, 98, 253) 11.2%, rgb(0, 49, 165) 91.1%);
+}
+
+@media screen and (max-width: 640px) {
+    .columns {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+*/
+
+                /* Container for all boxes */
+                .button-container {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    max-width: 100%;
+                    color: white;
+                }
+
+                /* Links inside the boxes */
+                .button-container a {
+                    color: white;
+                }
+
+                /* Individual box styling */
+                .custom-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    margin-bottom: 20px;
+                    flex: 1;
+                    position: relative;
+                    margin-right: 15px;
+                    /* Add right margin for padding between boxes */
+                    margin-left: 15px;
+                    /* Add left margin for padding between boxes */
+                }
+
+                /* Adjustments for smaller screens */
+                @media screen and (max-width: 768px) {
+                    .custom-box {
+                        padding: 20px 10px;
+                        /* Reduce padding on smaller screens */
+                    }
+                }
+
+                /* Image inside each box */
+                .box-image {
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                    width: 50px;
+                    /* Adjust as needed */
+                    height: auto;
+                    opacity: 0.5;
+                }
+
+                /* Content inside each box */
+                .box-content {
+                    text-align: left;
+                }
+
+                /* Additional padding for text on desktop */
+                @media screen and (min-width: 769px) {
+                    .box-content {
+                        padding-top: 80px;
+                        /* Add top padding to text on desktop */
+                    }
+                }
+
+                /* Adjustments for smaller screens */
+                @media screen and (max-width: 768px) {
+                    .custom-box {
+                        padding: 30px 20px;
+                        /* Reduce padding on smaller screens */
+                    }
+
+                    .box-content {
+                        padding-right: 100px;
+                        /* Add right padding of 100px on mobile */
+                    }
+                }
+
+                
+
+
+                /* Styling for specific boxes */
+                .custom-box-poverty {
+                    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+                }
+
+                .custom-box-energy {
+                    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+                }
+
+                .custom-box-elections {
+                    background: radial-gradient(circle at 10% 20%, rgb(7, 121, 222) 0%, rgb(20, 72, 140) 90%);
+                }
+
+                .custom-box-finance {
+                    background: linear-gradient(109.6deg, rgb(193, 98, 253) 11.2%, rgb(0, 49, 165) 91.1%);
+                }

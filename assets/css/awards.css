@@ -1,0 +1,58 @@
+/* Keep existing styles for desktop and tablet */
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.content-container img {
+    width: 30%;
+    margin: 0 auto; /* Center-align image horizontally */
+}
+
+.content-container p {
+    margin-top: 10px; /* Add spacing between logo and text */
+}
+
+.awards-bg {
+    background-image: url(../img/awards/awards-background.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+.award-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    margin: 20px 0px;
+    padding: 30px;
+}
+
+.quote {
+    font-size: 1.4em;
+}
+
+/* Add mobile-specific styles */
+@media screen and (max-width: 640px) {
+    .award-container img {
+        width: 50%;
+        padding-bottom: 20px;
+        margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensure the image behaves like a block element */
+        
+    }
+
+    .award-container {
+        display: flex;
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center-align items vertically */
+    }
+
+    .award-container .cell {
+        width: 100%; /* Ensure the image and text occupy full width */
+    }
+}

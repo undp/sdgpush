@@ -1,0 +1,29 @@
+.section-crisis-highlights {
+    background-image: url(../img/crisis-gradient.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%; /* Ensure the background image covers the entire container */
+    color: black;
+}
+
+h2 {
+    color: #176ab4;
+}
+
+.highlight-box h4 {
+    background: radial-gradient(circle at 10% 20%, rgb(7, 121, 222) 0%, rgb(20, 72, 140) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-weight: 700
+}
+
+.accordion-title{
+    color: black;
+    font-weight: 600;
+
+}
+
+.accordion-content h5 {
+    color: #005b8e
+}

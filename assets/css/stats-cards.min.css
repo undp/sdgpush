@@ -1,5 +1,5 @@
 div.stats-card {
-    /*background-color: #f7f7f7;*/
+    background-color: #f7f7f7;
     box-sizing: border-box;
     overflow-wrap: break-word;
     -webkit-transition: all .3s;
@@ -31,6 +31,7 @@ div.stats-card h2 {
     color: #f7f7f7;
     font-family: SohneBreit, ProximaNova, sans-serif;
     font-size: 5rem;
+    font-weight: 700;
     letter-spacing: .05rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -192,26 +193,120 @@ div.stats-card.small p {
 }
 
 div.stats-card:hover {
-    background-color: #162733;
+    background-color: #ffeb00
 }
 
 div.stats-card:hover h2 {
     color: #000
 }
 
+div.stats-card:hover.accent-yellow,
 div.stats-card:hover.yellow {
     background-color: #ffeb00
 }
 
+div.stats-card:hover.accent-red,
 div.stats-card:hover.red {
     background-color: #ee402d
 }
 
+div.stats-card:hover.accent-green,
 div.stats-card:hover.green {
     background-color: #6de354
 }
 
+div.stats-card:hover.accent-blue,
 div.stats-card:hover.blue {
+    background-color: #60d4f2
+}
+
+.accent-yellow div.stats-card:hover,
+.accent-yellow div.stats-card:hover.accent-yellow,
+.accent-yellow div.stats-card:hover.yellow {
+    background-color: #ffeb00
+}
+
+.accent-yellow div.stats-card:hover.accent-red,
+.accent-yellow div.stats-card:hover.red {
+    background-color: #ee402d
+}
+
+.accent-yellow div.stats-card:hover.accent-green,
+.accent-yellow div.stats-card:hover.green {
+    background-color: #6de354
+}
+
+.accent-yellow div.stats-card:hover.accent-blue,
+.accent-yellow div.stats-card:hover.blue {
+    background-color: #60d4f2
+}
+
+.accent-red div.stats-card:hover {
+    background-color: #ee402d
+}
+
+.accent-red div.stats-card:hover.accent-yellow,
+.accent-red div.stats-card:hover.yellow {
+    background-color: #ffeb00
+}
+
+.accent-red div.stats-card:hover.accent-red,
+.accent-red div.stats-card:hover.red {
+    background-color: #ee402d
+}
+
+.accent-red div.stats-card:hover.accent-green,
+.accent-red div.stats-card:hover.green {
+    background-color: #6de354
+}
+
+.accent-red div.stats-card:hover.accent-blue,
+.accent-red div.stats-card:hover.blue {
+    background-color: #60d4f2
+}
+
+.accent-green div.stats-card:hover {
+    background-color: #6de354
+}
+
+.accent-green div.stats-card:hover.accent-yellow,
+.accent-green div.stats-card:hover.yellow {
+    background-color: #ffeb00
+}
+
+.accent-green div.stats-card:hover.accent-red,
+.accent-green div.stats-card:hover.red {
+    background-color: #ee402d
+}
+
+.accent-green div.stats-card:hover.accent-green,
+.accent-green div.stats-card:hover.green {
+    background-color: #6de354
+}
+
+.accent-blue div.stats-card:hover,
+.accent-green div.stats-card:hover.accent-blue,
+.accent-green div.stats-card:hover.blue {
+    background-color: #60d4f2
+}
+
+.accent-blue div.stats-card:hover.accent-yellow,
+.accent-blue div.stats-card:hover.yellow {
+    background-color: #ffeb00
+}
+
+.accent-blue div.stats-card:hover.accent-red,
+.accent-blue div.stats-card:hover.red {
+    background-color: #ee402d
+}
+
+.accent-blue div.stats-card:hover.accent-green,
+.accent-blue div.stats-card:hover.green {
+    background-color: #6de354
+}
+
+.accent-blue div.stats-card:hover.accent-blue,
+.accent-blue div.stats-card:hover.blue {
     background-color: #60d4f2
 }
 

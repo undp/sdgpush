@@ -5368,7 +5368,7 @@
                 })
             }
         }, {
-            key: "_init",
+         key: "_init",
             value: function () {
                 var e = this.$element.attr("id");
                 this.$element.attr("aria-hidden", "true"), this.options.contentId ? this.$content = u()("#" + this.options.contentId) : this.$element.siblings("[data-off-canvas-content]").length ? this.$content = this.$element.siblings("[data-off-canvas-content]").first() : this.$content = this.$element.closest("[data-off-canvas-content]").first(), this.options.contentId ? this.options.contentId && null === this.options.nested && console.warn("Remember to use the nested option if using the content ID option!") : this.nested = 0 === this.$element.siblings("[data-off-canvas-content]").length, !0 === this.nested && (this.options.transition = "overlap", this.$element.removeClass("is-transition-push")), this.$element.addClass("is-transition-".concat(this.options.transition, " is-closed")), this.$triggers = u()(document).find('[data-open="' + e + '"], [data-close="' + e + '"], [data-toggle="' + e + '"]').attr("aria-expanded", "false").attr("aria-controls", e), this.position = this.$element.is(".position-left, .position-top, .position-right, .position-bottom") ? this.$element.attr("class").match(/position\-(left|top|right|bottom)/)[1] : this.position, !0 === this.options.contentOverlay && (e = document.createElement("div"), t = "fixed" === u()(this.$element).css("position") ? "is-overlay-fixed" : "is-overlay-absolute", e.setAttribute("class", "js-off-canvas-overlay " + t), this.$overlay = u()(e), "is-overlay-fixed" == t ? u()(this.$overlay).insertAfter(this.$element) : this.$content.append(this.$overlay));
@@ -8229,3 +8229,9 @@
         }))
     })
 }]);
+
+// Initialize the mega menu and language switch
+$(document).ready(function(){
+  navigationInitialize();
+  langSwitch();
+});

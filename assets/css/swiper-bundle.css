@@ -415,6 +415,7 @@ button.swiper-pagination-bullet {
   z-index: 50;
   height: 5px;
   width: 98%;
+    
 }
 .swiper-vertical > .swiper-scrollbar {
   position: absolute;

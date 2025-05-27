@@ -1,0 +1,55 @@
+.section-safer {
+    background: linear-gradient(to bottom, rgb(255, 78, 78) 11.2%, rgb(253, 176, 71) 117.9%);
+    color: white;
+}
+
+
+.section-safer h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: white;
+}
+
+h2,
+h3,
+h5 {
+    color: #533694;
+}
+
+
+/* Default styles for desktop */
+.moonshots-sdgs {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 768px) {
+    .moonshots-sdgs {
+        grid-template-columns: repeat(4, 1fr);
+        /* Change to 3 columns for tablets */
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    .moonshots-sdgs {
+        grid-template-columns: repeat(3, 1fr);
+        /* Change to 2 columns for mobile */
+    }
+}
+
+
+.moonshots-sdgs .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 8%;
+}
