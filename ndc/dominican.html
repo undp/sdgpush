@@ -1,0 +1,2431 @@
+<style>
+/* Desktop-only aspect-ratio for NDC/NDP iframe containers */
+@media (min-width: 768px) {
+        /* Desktop-only negative margin for NDC/NDP notes */
+        .stack-ndc-ndp-desktop .ndc-note-desktop,
+        .stack-ndc-ndp-desktop .ndp-note-desktop {
+            margin-top: -10rem !important;
+        }
+    .stack-ndc-ndp-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+        padding: 0;
+    }
+    .stack-ndc-ndp-desktop .ndc-iframe-container,
+    .stack-ndc-ndp-desktop .ndp-iframe-container {
+        max-width: 500px;
+        width: 200px; /* You can change this value */
+        aspect-ratio: unset;
+        height: 700px; /* You can change this value */
+        top: -80px;
+        transform: scale(0.8);
+        margin: 0 auto;
+    }
+
+    .ndc-iframe-container,
+    .ndp-iframe-container {
+        aspect-ratio: 9 / 5;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: unset;
+        height: unset;
+        position: relative;
+        overflow: hidden;
+    }
+    .ndc-iframe-container iframe,
+    .ndp-iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+/* Mobile: Ensure NDC/NDP boxes are visible by setting min-height */
+@media (max-width: 767px) {
+    .ndc-iframe-container,
+    .ndp-iframe-container {
+            height: 460px;
+        aspect-ratio: unset;
+        /* top: 40px; */
+    }
+        .ndc-iframe-container iframe,
+        .ndp-iframe-container iframe {
+            height: 100% !important;
+            min-height: 0 !important;
+            max-height: none !important;
+        }
+}
+@media (max-width: 767px) {
+    .flourish-embed,
+    .flourish-embed * {
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+    .flourish-embed {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
+        min-height: 470px !important;
+        padding: 0 !important;
+        overflow-x: auto !important;
+        overflow-y: visible !important;
+        background: #fff !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        display: block !important;
+        margin-top: 2.2rem !important;
+    }
+    .flourish-embed iframe {
+        min-width: 900px !important;
+        max-width: none !important;
+        width: 900px !important;
+        height: 600px !important;
+        transform: scale(0.7);
+        transform-origin: top left;
+        display: block !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        background: #fff !important;
+        pointer-events: auto !important;
+    }
+}
+</style>
+<style>
+
+</style>
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dominican Republic | NDC x SDG Insights | SDG Push | UNDP</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta name="description" content="Integrated SDG Insights for Dominican Republic">
+    <meta name="keywords" content="UNDP, UN, SDG Insights, SDG Push, Dominican Republic, NDC">
+    <link rel="canonical" href="https://sdgpush.undp.org/ndc/dominican republic.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dominican Republic | NDC x SDG Insights | SDG Push | UNDP">
+    <meta property="og:site_name" content="UNDP">
+    <meta property="og:url" content="https://sdgpush.undp.org/ndc/dominican republic.html">
+    <meta property="og:description" content="Integrated SDG Insights for Dominican Republic">
+    <meta property="og:image" content="https://sdgpush.undp.org/assets/img/social-thumbnail.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@undp">
+    
+    
+    <link rel="stylesheet" href="https://use.typekit.net/ukl2sym.css">
+    <link rel="stylesheet" href="../assets/css/app.css?202109231710">
+    <link rel="stylesheet" href="../assets/css/content-card.min.css">
+    <link rel="stylesheet" href="../assets/css/stats-cards.min.css">
+    <link rel="stylesheet" href="../assets/css/buttons.min.css">
+    <link rel="stylesheet" href="../assets/css/cta-link.min.css">
+    <link rel="stylesheet" href="../assets/css/breadcrumbs.css">
+    <link rel="stylesheet" href="../assets/css/modal.min.css">
+    <link rel="stylesheet" href="../assets/css/tab.min.css" />
+    <link rel="stylesheet" href="../tab.min.css" />
+    <link rel="stylesheet" href="../tabs-partnerships.css" />
+    <link rel="stylesheet" href="../assets/css/stats-card-slider.min.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom-select.min.css">
+    <link rel="stylesheet" href="../assets/css/footer.min.css">
+    <link rel="stylesheet" href="../assets/css/bio-card.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/base-minimal.min.css">
+    <link rel="stylesheet" href="../assets/css/country-site-header.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/language-switcher.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mega-menu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mobile-nav.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu-overflow.min.css">
+    <link rel="stylesheet" href="assets/css/tiles.css">
+    <link rel="stylesheet" href="../assets/css/reports-2024.css">
+
+    <script src="https://unpkg.com/swiper@7.4.1/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="../assets/js/lottie-player.js"></script>
+    
+    <!-- UNDP Visualization Stylesheets -->
+    <link rel="stylesheet" href="https://use.typekit.net/jtg8msg.css" />
+    <link rel="stylesheet" href="https://undp-data.github.io/stylesheets-for-viz/style/mainStyleSheet.css" />
+    <link rel="stylesheet" href="https://viz-tool.data.undp.org/style.css" crossorigin="anonymous" />
+    
+    <style>
+                    /* ================= FLAG NAV/CAROUSEL ARROW MOBILE OPTIMIZATION ================ */
+                    @media screen and (max-width: 768px) {
+                        #flag-prev, #flag-next {
+                            width: 28px !important;
+                            height: 40px !important;
+                            min-width: 28px !important;
+                            min-height: 40px !important;
+                            top: 50% !important;
+                            transform: translateY(-50%) !important;
+                            padding: 0 !important;
+                        }
+                        #flag-prev {
+                            left: -40px !important;
+                            right: auto !important;
+                        }
+                        #flag-next {
+                            right: -40px !important;
+                            left: auto !important;
+                        }
+                        #flag-prev svg, #flag-next svg {
+                            width: 28px !important;
+                            height: 40px !important;
+                        }
+                    }
+                /* Custom highlight color for text selection */
+                ::selection {
+                    background: #0A97D9; /* Accent blue or your preferred highlight */
+                    color: #fff;
+                }
+                ::-moz-selection {
+                    background: #0A97D9;
+                    color: #fff;
+                }
+        /* Fix UNDP tooltip text wrapping */
+        .undp-viz-tooltip,
+        [class*="tooltip"],
+        .undp-div-tool-graph-embed [role="tooltip"],
+        .undp-div-tool-graph-embed div[style*="position: absolute"] {
+            white-space: normal !important;
+            max-width: 300px !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+        }
+        
+        /* Target the specific tooltip container */
+        .undp-div-tool-graph-embed > div > div[style*="pointer-events"] {
+            white-space: normal !important;
+            max-width: 300px !important;
+        }
+        
+        /* More aggressive targeting for all divs inside the embed */
+        .undp-div-tool-graph-embed * {
+            white-space: normal !important;
+        }
+        
+        .undp-div-tool-graph-embed div[style*="z-index"] {
+            max-width: 300px !important;
+            word-wrap: break-word !important;
+        }
+        
+        /* Target SVG text elements in tooltips */
+        .undp-div-tool-graph-embed svg text[title] {
+            white-space: normal !important;
+        }
+        
+        .undp-div-tool-graph-embed svg rect[title="Sharing"] {
+            width: 300px !important;
+        }
+        
+        /* Target the tooltip background rect */
+        .undp-div-tool-graph-embed g[transform*="translate"] rect[fill-opacity="1"] {
+            width: 300px !important;
+        }
+        
+        /* ========== MOBILE & RESPONSIVE OPTIMIZATIONS ========== */
+        
+        /* Base responsive images and embeds */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        iframe {
+            max-width: 100%;
+        }
+        
+        /* Mobile breakpoint: tablets and below */
+        @media screen and (max-width: 768px) {
+            /* Adjust container padding for mobile */
+            .grid-container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            
+            /* Stack columns on mobile */
+            .cell.small-12.medium-6.large-6 {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                margin-bottom: 2rem;
+            }
+            
+            /* Reduce section padding on mobile */
+            section[style*="padding"] > .cell {
+                padding: 2rem 1rem !important;
+            }
+            
+            /* Make iframes responsive */
+            iframe {
+                width: 100% !important;
+                height: auto !important;
+                min-height: 400px !important;
+            }
+            
+            /* Restore previous display for NDC/NDP bubble chart iframes: no forced height or scale */
+            iframe[src*="localhost:5173"],
+            iframe[style*="top: -50px"] {
+                position: absolute !important;
+                top: -50px !important;
+                height: 700px !important;
+                left: 0 !important;
+                transform: none !important;
+            }
+            
+            /* Adjust iframe containers */
+            div[style*="height:400px"][style*="overflow:hidden"] {
+                height: 450px !important;
+                overflow: visible !important;
+            }
+            
+            /* Adjust UNDP visualization containers for mobile */
+            .undp-viz-container-8-3,
+            .undp-viz-container-8-4 {
+                height: 400px !important;
+                overflow-x: auto !important;
+            }
+            
+            .undp-viz-scaled-8-3,
+            .undp-viz-scaled-8-4 {
+                transform: scale(0.4) !important;
+                width: 250% !important;
+            }
+            
+            /* Adjust Flourish embeds for mobile */
+            .flourish-embed {
+                min-height: 350px !important;
+            }
+            
+            /* Make carousel flags stack better on mobile */
+            .flag-container .flag {
+                width: 40% !important;
+                min-width: 150px !important;
+            }
+            
+            /* Adjust carousel arrows for mobile */
+            #flag-prev,
+            #flag-next {
+                left: 0 !important;
+                right: auto !important;
+                width: 40px !important;
+                height: 60px !important;
+            }
+            
+            #flag-next {
+                left: auto !important;
+                right: 0 !important;
+            }
+            
+            /* Adjust font sizes for mobile readability */
+            h1 {
+                font-size: 1.75rem !important;
+            }
+            
+            h2 {
+                font-size: 1.5rem !important;
+            }
+            
+            h3 {
+                font-size: 1.25rem !important;
+            }
+            
+            h4 {
+                font-size: 1.1rem !important;
+            }
+            
+            p, li {
+                font-size: 0.9rem !important;
+                line-height: 1.5 !important;
+            }
+            
+            /* Adjust hero section for mobile */
+            .hero-section video,
+            .hero-section img {
+                height: 300px !important;
+                object-fit: cover;
+            }
+            
+            /* Make data cards stack on mobile */
+            .data-card {
+                margin-bottom: 1.5rem !important;
+            }
+            
+            /* Adjust activity cards for mobile */
+            div[style*="flex:1"] {
+                flex: 1 1 100% !important;
+                margin-bottom: 1rem !important;
+            }
+        }
+        
+        /* Extra small devices (phones in portrait) */
+        @media screen and (max-width: 480px) {
+            /* Further reduce padding */
+            .grid-container {
+                padding-left: 0.5rem !important;
+                padding-right: 0.5rem !important;
+            }
+            
+            /* Make carousel flags full width on very small screens */
+            .flag-container .flag {
+                width: 80% !important;
+            }
+            
+            /* Reduce heading sizes further */
+            h1 {
+                font-size: 1.5rem !important;
+            }
+            
+            h2 {
+                font-size: 1.3rem !important;
+            }
+            
+            h3 {
+                font-size: 1.15rem !important;
+            }
+            
+            /* Make UNDP viz even smaller on tiny screens */
+            .undp-viz-scaled-8-3,
+            .undp-viz-scaled-8-4 {
+                transform: scale(0.3) !important;
+                width: 333% !important;
+            }
+        }
+    </style>
+    
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NDW6MV6');
+    </script>
+</head>
+
+<body>
+    <!-- **********SDG color strip TOP (half) START *********** -->
+    <div style="height: 8px; display: flex; width: 100%; margin: 0; padding: 0; box-sizing: border-box; position: fixed; top: 0; left: 0; right: 0; z-index: 10000;">
+        <div style="flex: 1; background-color: #E5243B; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #DDA63A; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #4C9F38; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #C5192D; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #FF3A21; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #26BDE2; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #FCC30B; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #A21942; margin: 0; padding: 0;"></div>
+        <div style="flex: 1; background-color: #FD6925; margin: 0; padding: 0;"></div>
+    </div>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDW6MV6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header class="country-header" style="z-index: 999; background: #ffffff !important; background-image: none !important; box-shadow: none !important; top: 8px;">
+        <section class="header">
+            <div class="grid-container fluid">
+                <div class="grid-x grid-margin-x align-content-middle">
+                    <div class="cell small-8 large-2 shrink align-self-middle top-left">
+                        <a href="../index.html" class="logo" tabindex="0" title="UNDP Logo homepage link">
+                            <img src="../assets/img/undp-logo-blue.svg" alt="UNDP Logo" />
+                        </a>
+                        <div class="site-title">
+                           <span><a href="../index.html" title="UNDP homepage link" style="font-weight: 600; font-size: 1.4rem; color: #000000;">SDG Push Insight report</a></span>
+                            <br>
+                            <span style="font-weight: 600; font-size: 1.4rem; color: #000000;">Dominican Republic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+        <!-- Mobile Hero Section: Only visible on mobile -->
+        <div class="mobile-hero-container" style="display:none;">
+            <div class="mobile-hero-img-wrap" style="position:relative;">
+                <img src="../assets/img/02.jpg" alt="Country Hero" />
+                <div class="mobile-hero-text-overlay">
+                    <span class="mobile-hero-country">Integrated</span>
+                    <span class="mobile-hero-type">NDC x SDG Insights</span>
+                    <span class="mobile-hero-country">Dominican Republic</span>
+                </div>
+            </div>
+            <p class="mobile-hero-desc">NDC x SDG Insights leverages data, AI, and systems analysis to identify acceleration pathways and uncover systemic barriers to climate action, positioning climate as a key driver of SDG achievement and informing the NDC 3.0 process.</p>
+        </div>
+
+
+
+
+        <div class="grid-y grid-frame align-center cover section-00-cover" id="toc0" data-magellan-target="toc0" style="z-index: 50; position: relative; min-height: 420px;">
+            <div style="position: relative; min-height: 420px;">
+                <img src="../assets/img/02.jpg" alt="Hero image" style="width: 100%; height: auto; display: block;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.45); pointer-events: none;"></div>
+                <div class="grid-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+                    <div class="grid-x" style="width: 100%;">
+                        <div class="small-12 medium-12 large-12 cell" id="reports-hero" style="color: white; text-align: left; text-shadow: 0 2px 8px rgba(0,0,0,0.5); padding: 16vw 0 3vw 6vw; position: relative; z-index: 2; pointer-events: auto;">
+                            <span class="breadcrumb white inviewport" id="hero-text">
+                                <a href="./index.html" aria-label="Back to main site" style="text-decoration: underline; color: white;">Back to main site</a>
+                            </span>
+                            <br>
+                            <h2 style="line-height:1.2;">Integrated<br>NDC X SDG Insights<br>Dominican Republic</h2>
+                            <br>
+                                                        <div class="hero-desc-desktop">
+                                                            <p style="line-height:1.4;margin:0;">NDC x SDG Insights leverages data, AI, and systems analysis to identify <br>acceleration pathways and uncover systemic barriers to climate action, <br>positioning climate as a key driver of SDG achievement and informing the NDC 3.0 process.</p>
+                                                        </div>
+                                                        <div class="hero-desc-mobile" style="display:none;">
+                                                            <p style="line-height:1.4;margin:0;">NDC x SDG Insights leverages data, AI, and systems analysis to identify acceleration pathways and uncover systemic barriers to climate action, positioning climate as a key driver of SDG achievement and informing the NDC 3.0 process.</p>
+                                                        </div>
+<style>
+@media (max-width: 600px) {
+    .desktop-hero-only, .grid-y.grid-frame.cover.section-00-cover { display: none !important; }
+    .mobile-hero-container { display: flex !important; flex-direction: column; align-items: center; background: #fff; padding: 1.5rem 1rem 1rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-radius: 0 0 16px 16px; margin-bottom: 1.5rem; margin-top: 90px; }
+    .mobile-hero-img-wrap img { width: 100vw; max-width: 100vw; border-radius: 0; margin-bottom: 1rem; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: block; margin-left: -1rem; margin-right: -1rem; }
+        .mobile-hero-text-overlay {
+            position: absolute;
+            top: 18%;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 1.2rem;
+            z-index: 2;
+        }
+        .mobile-hero-text-overlay .mobile-hero-country,
+        .mobile-hero-text-overlay .mobile-hero-type {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            margin-bottom: 0.2rem;
+            text-align: left;
+        }
+        .mobile-hero-desc { font-size: 1rem; color: #222; text-align: left; line-height: 1.5; margin-bottom: 0.5rem; }
+}
+</style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- No spacer needed, hero is now in normal flow -->
+        </div>
+
+    <main class="off-canvas-wrapper" id="main" data-sticky-container style="z-index: 1;">
+
+
+        <!-- How To Read This Report Section -->
+        <section class="grid-container" style="padding-top: 5rem; padding-bottom: 5rem;">
+                <style>
+                @media (max-width: 600px) {
+                    /* Reduce top and bottom padding for How To Read section on mobile only */
+                    .grid-container[style*='padding-top: 5rem'] {
+                        padding-top: 2rem !important;
+                        padding-bottom: 2.5rem !important;
+                    }
+                }
+                </style>
+                <div class="grid-x grid-padding-x">
+                <div class="cell small-12 medium-6 large-6">
+                    <h2 style="font-size:2rem;font-weight:700;margin-bottom:1.5rem;">How To Read This Report</h2>
+                    <p style="font-size:1.1rem;line-height:1.6;">The NDC x SDG approach focuses on identifying the key interlinkages and pathways through which priority climate actions can accelerate a country’s most vital development goals. In doing so, it helps craft a clear, evidence-based narrative that brings together broad coalitions across government to drive coordinated progress.</p>
+                    <p style="font-size:1.1rem;line-height:1.6;">The report is divided into four categories of analysis &rarr;</p>
+                </div>
+                <div class="cell small-12 medium-6 large-6">
+                    <ul style="list-style:none;padding:0;margin:0;">
+                        <li style="margin-bottom:1.2rem;"><strong>NDC x SDG Moment</strong> &mdash; human progress within planetary boundaries is the next development frontier. This section provides a snapshot of key climate and human development data.</li>
+                        <li style="margin-bottom:1.2rem;"><strong>NDC x SDG Alignment</strong> &mdash; maps climate commitments and national development priorities using custom machine learning tool that draws from an SDG vocabulary of 100k terms.</li>
+                        <li style="margin-bottom:1.2rem;"><strong>NDC x SDG Interlinkages</strong> &mdash; identifies national-level actions through enhanced NDCs that accelerate SDG achievement and advances a robust development case.</li>
+                        <li style="margin-bottom:1.2rem;"><strong>Finance &amp; Stimulus</strong> &mdash; charts fiscal constraints and stimulus opportunities to ensure climate and development policy choices can be advanced with greatest impact.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider (Thin SDG Color Strip) -->
+        <div class="sdg-divider" style="height:6px;display:flex;width:100vw;max-width:100vw;margin:0 0 2.5rem 0;position:relative;left:50%;right:50%;transform:translateX(-50%);z-index:10;">
+            <div style="flex:1;background-color:#E5243B;"></div>
+            <div style="flex:1;background-color:#DDA63A;"></div>
+            <div style="flex:1;background-color:#4C9F38;"></div>
+            <div style="flex:1;background-color:#C5192D;"></div>
+            <div style="flex:1;background-color:#FF3A21;"></div>
+            <div style="flex:1;background-color:#26BDE2;"></div>
+            <div style="flex:1;background-color:#FCC30B;"></div>
+            <div style="flex:1;background-color:#A21942;"></div>
+            <div style="flex:1;background-color:#FD6925;"></div>
+            <div style="flex:1;background-color:#DD1367;"></div>
+            <div style="flex:1;background-color:#FD9D24;"></div>
+            <div style="flex:1;background-color:#BF8B2E;"></div>
+            <div style="flex:1;background-color:#3F7E44;"></div>
+            <div style="flex:1;background-color:#0A97D9;"></div>
+            <div style="flex:1;background-color:#56C02B;"></div>
+            <div style="flex:1;background-color:#00689D;"></div>
+        </div>
+
+        <!-- 1. SDG Moment Section (two-column layout) -->
+        <section id="sdg-moment" class="grid-container" style="padding-bottom:5rem;">
+            <style>
+            /* NDC x SDG Moment Section Mobile Optimization */
+            @media (max-width: 767px) {
+                #sdg-moment {
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                }
+            }
+            </style>
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 medium-5 large-4" style="margin-bottom:1.5rem;">
+                      <h4 style="margin-top:0; font-weight:600; white-space:nowrap;">1. NDC x SDG Moment</h4>
+                </div>
+                <div class="cell small-12 medium-7 large-8">
+                    <p>
+                        This section takes stock of the country’s current climate and sustainable development context, providing a clear snapshot of key climate and human development data and setting the scene to identify climate–development synergies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider (Thin SDG Color Strip) -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- 2. Data Snapshots Section -->
+        <section id="data-snapshots" class="grid-container full" style="padding:0;max-width:100%;">
+            <div class="grid-x grid-padding-x" style="position:relative;">
+                <!-- Dark Background Panel (Full Width) -->
+                <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:#2C3E50;z-index:1;"></div>
+                
+                <!-- Left Column: Text Content -->
+                <div class="cell small-12 medium-12 large-5" style="padding:2.5rem 2.5rem 2.5rem 3rem;color:white;z-index:2;position:relative;">
+                    
+
+
+                                        <!-- CO2 Mitigation Target Box -->
+            <div style="background:rgba(52,73,94,0.6);padding:1.5rem;margin-bottom:1.5rem;border-radius:4px;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;">
+              <!-- Left Column -->
+              <div>
+                <p style="color:#ffffff;font-size:0.95rem;font-weight:600;margin:0;line-height:1.6;">
+                  As part of their NDC the Dominican Republic has set a target of reducing emissions by
+                </p>
+              </div>
+              <!-- Right Column -->
+              <div>
+                <p style="color:#ffffff;font-size:2.2rem;font-weight:800;margin:0;line-height:1.3;">13.85 MtCO<sub>2</sub>e</p>
+                <p style="color:#ffffff;font-size:2.2rem;font-weight:800;margin:0;line-height:1.3;">(27%)</p>
+                
+                
+              </div>
+            </div>
+
+                    <!-- Read More Section -->
+                    <div>
+                        <button onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.chevron').style.transform = this.nextElementSibling.style.display === 'none' ? 'rotate(0deg)' : 'rotate(180deg)';" style="background:transparent;border:none;color:white;font-size:1rem;font-weight:600;cursor:pointer;padding:0.5rem 0;display:flex;align-items:center;">
+                            Read more 
+                            <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" style="margin-left:0.5rem;transition:transform 0.3s;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="#E74C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div style="display:none;margin-top:1rem;">
+                            <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">
+                                Human activities are causing significant climate change with severe environmental and socio-economic consequences. Integrating climate action for emissions reduction and enhanced resilience into development strategies can advance human development and provide multiple co-benefits.
+                            </p>
+                            <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">
+                                All countries are navigating through a period of profound global uncertainty and shrinking development space that is affecting the landscape of global growth. The vulnerability of debt is at its highest level in decades in many developing economies, coinciding with a period when donors are making substantial cuts to aid flows. With these global challenges, it’s important to leverage finance and resources nationally to drive development priorities.
+                            </p>
+                            <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">
+                                The Dominican Republic is in the high human development category (89th of 193) and the country’s IMF Adapted ND-GAIN index indicates vulnerability to climate disruptions and challenges in leveraging investments for adaptation actions. With a score of 20.7/100 for projected emissions levels in 2050, the Dominican Republic is expected to face challenges in achieving carbon neutrality. the Dominican Republic’s projected Biodiversity Intactness Index indicates moderate impact on biodiversity in 2050.
+                            </p>
+                            <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">
+                                The Dominican Republic’s development aspirations aim to transform the country into a high-income, resilient, and inclusive economy. By 2036, the nation seeks to double real GDP, reduce poverty below 10%, expand the middle class, raise educational attainment, and increase life expectancy, while strengthening institutions, productivity, and sustainability.
+                            </p>
+                            <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">
+                                The Dominican Republic’s 2020 NDC raises its climate ambition by committing to a 27% reduction in emissions by 2030, with both conditional and unconditional targets supported by 46 mitigation measures. It also incorporates 37 adaptation actions, emphasizing water, food, and urban resilience, with investments of nearly USD 17.6 billion, and transversal principles of inclusion, equity, youth, and human rights, aligned with the 2030 SDGs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Data Cards (overlaying dark panel) -->
+                <div class="cell small-12 medium-12 large-5 large-offset-1" style="z-index:3;position:relative;margin-top:2rem;">
+                    <!-- White card with interactive visualization -->
+                    <div style="background:white;padding:0;border:1px solid #E0E0E0;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);overflow:hidden;">
+                        <img src="../assets/dvfile/dom_moment.png" alt="Dominican Republic data visualization" style="width:100%;height:auto;display:block;">
+                    </div>
+                    
+                    <!-- Caption directly under image, on dark panel -->
+                    <p style="font-size:0.8rem;color:#B0B8C0;line-height:1.4;margin:0.5rem 0 0 0;font-style:italic;">Sources European Commission 2023 (INFORM Climate Change Risk Index), IMF 2022 (IMF-Adapted ND-GAIN Index); Environmental Performance Index 2024 (GHG growth rate adjusted by emissions intensity &amp; Projected Emissions in 2050); Helen Phillips; Adriana De Palma; Ricardo E Gonzalez; Sara Contu et al. 2021 (Biodiversity Intactness Index).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider (Thin SDG Color Strip) -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0 0 3rem 0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 3: NDC x SDG Alignment -->
+        <section id="alignment" class="grid-container" style="padding:3rem 0; max-width:1200px; margin:0 auto;">
+            <style>
+            /* NDC x SDG Alignment (Goal Level) Section Mobile Optimization */
+            @media (max-width: 767px) {
+                #alignment {
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                }
+            }
+            </style>
+            <div class="grid-x grid-padding-x">
+                <!-- Left Column: Heading -->
+                <div class="cell small-12 medium-5 large-4">
+                    <h4 style="margin-top:0; font-weight:600; white-space:nowrap;">NDC x SDG Alignment</h4>
+                    <h4 style="font-weight:600;">Goal Level</h4>
+                    
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="cell small-12 medium-7 large-8">
+                    <p>This analysis shows the most prominent SDGs in each of the two national strategies on climate and development. This identifies areas of common action and potential synergies across national climate and development priorities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 4: Dark Panel -->
+        <section id="section-4" class="grid-container full" style="padding:0;max-width:100%;">
+            <div class="grid-x grid-padding-x" style="position:relative;">
+                <!-- Dark Background Panel (Full Width) -->
+                <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:#2C3E50;z-index:1;"></div>
+                
+                <!-- Content Area -->
+                <div class="cell small-12" style="padding:4rem 3rem;color:white;z-index:2;position:relative;">
+                    <!-- Header Row (removed duplicate explanatory paragraph) -->
+
+                    <!-- Two Column Layout -->
+                    <div class="grid-x grid-padding-x">
+                        <div class="cell small-12 stack-ndc-ndp-desktop">
+                            <h4 style="color:#ffffff;font-weight:700;margin-bottom:1.5rem;font-size:1.4rem;">Nationally Determined Contributon (NDC)</h4>
+                            <div class="ndc-iframe-container" style="background:#FFFFFF;padding:0;border-radius:8px;border:1px solid #E0E0E0;box-shadow:0 4px 12px rgba(0,0,0,0.08);overflow:hidden;position:relative;width:100%;max-width:100%;min-width:0;">
+                                <iframe 
+                                    src="https://zealous-moss-015006103.5.azurestaticapps.net/?dataURL=https%3A%2F%2Fraw.githubusercontent.com%2Fandreykrachkov%2Fndcxsdgdata%2Frefs%2Fheads%2Fmain%2Fnationalpriorities%2Fdom_ndc_rescaled.json&embed=true"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                ></iframe>
+                            </div>
+                            <p class="ndc-note-desktop" style="font-size:0.85rem;color:#B0B8C0;margin-top:1rem;font-style:italic;">Note: Based on Updated Nationally Determined Contribution (2020)</p>
+
+                            <h4 style="color:#ffffff;font-weight:700;margin-bottom:1.5rem;margin-top:2.5rem;font-size:1.4rem;">National Development Plan(s) (NDP)</h4>
+                            <div class="ndp-iframe-container" style="background:#FFFFFF;padding:0;border-radius:8px;border:1px solid #E0E0E0;box-shadow:0 4px 12px rgba(0,0,0,0.08);overflow:hidden;position:relative;width:100%;max-width:100%;min-width:0;">
+                                <iframe 
+                                    src="https://zealous-moss-015006103.5.azurestaticapps.net/?dataURL=https%3A%2F%2Fraw.githubusercontent.com%2Fandreykrachkov%2Fndcxsdgdata%2Frefs%2Fheads%2Fmain%2Fnational-development-plans%2Fdom_ndp.json&embed=true"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                ></iframe>
+                            </div>
+                            <p class="ndp-note-desktop" style="font-size:0.85rem;color:#B0B8C0;margin-top:1rem;font-style:italic;">Note: Based on Pluriannual National Plan of the Public Sector</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Note -->
+                    <div style="margin-top:3rem;">
+                        <p style="font-size:0.9rem;color:#B0B8C0;text-align:center;font-style:italic;">These visuals are generated by analyzing the NDCs and National Development Plans through the SDG framework at goal level.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 3: NDC x SDG Alignment (Duplicate) -->
+        <section id="alignment-duplicate" class="grid-container" style="padding:3rem 0; max-width:1200px; margin:0 auto;">
+                    <style>
+                    /* NDC x SDG Alignment (Target Level) Section Mobile Optimization */
+                    @media (max-width: 767px) {
+                        #alignment-duplicate {
+                            padding-left: 1rem !important;
+                            padding-right: 1rem !important;
+                        }
+                    }
+                    </style>
+            <div class="grid-x grid-padding-x">
+                <!-- Left Column: Heading -->
+                <div class="cell small-12 medium-5 large-4">
+                    <h4 style="margin-top:0; font-weight:600; white-space:nowrap;">NDC x SDG Alignment</h4>
+                    <h4 style="font-weight:600;">Target Level</h4>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="cell small-12 medium-7 large-8">
+                    <p>This analysis shows how the country’s climate actions, both mitigation and adaptation, align with and drive impact across the SDGs at the target level. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 4: Dark Panel (Duplicate) -->
+        <section id="section-4-duplicate" class="grid-container full" style="padding:0;max-width:100%;">
+            <div class="grid-x grid-padding-x" style="position:relative;">
+                <!-- Dark Background Panel (Full Width) -->
+                <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:#2C3E50;z-index:1;"></div>
+                
+                <!-- Content Area -->
+                <div class="cell small-12" style="padding:4rem 3rem;color:white;z-index:2;position:relative;">
+                    <!-- Header Row -->
+                    <div style="margin-bottom:3rem;">
+                        <!-- <p style="color:white;font-size:1.1rem;line-height:1.6;margin:0;">This analysis shows the most prominent SDGs in each of the two national strategies on climate and development. This identifies areas of common action and potential synergies across national climate and development priorities.</p> -->
+                    </div>
+
+                    <!-- Two Column Layout -->
+                    <div class="grid-x grid-padding-x">
+                        <div class="cell small-12 medium-6" style="padding-right:1.5rem;">
+                            <h4 style="color:#ffffff;font-weight:700;margin-bottom:1.5rem;font-size:1.4rem;">Mitigation NDCs</h4>
+                            <div style="background:#FFFFFF;padding:2rem;border-radius:8px;min-height:320px;display:flex;align-items:center;justify-content:center;border:1px solid #E0E0E0;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+                                <div class="flourish-embed flourish-sankey" data-src="visualisation/22910276" style="width:100%;height:100%;min-height:280px;"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22910276/thumbnail" width="100%" alt="sankey visualization" /></noscript></div>
+                            </div>
+                            <!-- <p style="font-size:0.85rem;color:#B0B8C0;margin-top:1rem;font-style:italic;">Note: Based on NDC 2.0 (2021)</p> -->
+                        </div>
+
+                        <div class="cell small-12 medium-6" style="padding-left:1.5rem;">
+                            <h4 style="color:#ffffff;font-weight:700;margin-bottom:1.5rem;font-size:1.4rem;">Adaptation NDCs</h4>
+                            <div style="background:#FFFFFF;padding:2rem;border-radius:8px;min-height:320px;display:flex;align-items:center;justify-content:center;border:1px solid #E0E0E0;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+                                <div class="flourish-embed flourish-sankey" data-src="visualisation/22910345" style="width:100%;height:100%;min-height:280px;"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22910345/thumbnail" width="100%" alt="sankey visualization" /></noscript></div>
+                            </div>
+                            <!-- <p style="font-size:0.85rem;color:#B0B8C0;margin-top:1rem;font-style:italic;">Note: Based on: 1) Pentagonal Strategy Phase I; 2) National Strategic Development Plan (NSDP) 2019-2023; 3) Mid-Term Review NSDP 2019-2023; 4) Rectangular Strategy Phase IV; 5) Pentagon Strategy 2024-2028 Phase I</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Bottom Note -->
+                    <div style="margin-top:3rem;">
+                        <p style="font-size:0.9rem;color:#B0B8C0;text-align:center;font-style:italic;">These visuals are generated by analyzing NDC actions through a custom-built AI tool and categorized using the SCAN tool to surface relevant SDG synergies at the Goal level. 
+                            For additional information on the NDC-SDG mapping, please visit: https://ambitiontoaction.net/scan_tool/
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 3: NDC x SDG Alignment (Duplicate 2) -->
+        <section id="alignment-duplicate-2" class="grid-container" style="padding:3rem 0; max-width:1200px; margin:0 auto;">
+                    <style>
+                    /* NDC x SDG Alignment (Action Level) Section Mobile Optimization */
+                    @media (max-width: 767px) {
+                        #alignment-duplicate-2 {
+                            padding-left: 1rem !important;
+                            padding-right: 1rem !important;
+                        }
+                        /* Set margins for Adaptation box for mobile */
+                        #section-4-duplicate-2 .cell.small-12.medium-6[style*='padding-left'] > div[style*='background:#FFFFFF'] {
+                            margin-left: -1rem !important;
+                            margin-right: 1rem !important;
+                        }
+                        /* Set margins for Adaptation NDCs box for mobile */
+                        #section-4-duplicate .cell.small-12.medium-6[style*='padding-left'] > div[style*='background:#FFFFFF'] {
+                            margin-left: -1rem !important;
+                            margin-right: 1rem !important;
+                        }
+                        /* Set margins for NDP box for mobile */
+                        #section-4 .cell.small-12.medium-6[style*='padding-left'] > div[style*='background:#FFFFFF'] {
+                            margin-left: -1rem !important;
+                            margin-right: 1rem !important;
+                        }
+                    }
+                    </style>
+            <div class="grid-x grid-padding-x">
+                <!-- Left Column: Heading -->
+                <div class="cell small-12 medium-5 large-4">
+                    <h4 style="margin-top:0; font-weight:600; white-space:nowrap;">NDC x SDG Alignment</h4>
+                    <h4 style="font-weight:600;">Action Level</h4>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="cell small-12 medium-7 large-8">
+                    <p>This section breaks down the NDC categories into specific country commitments identified through a custom-built AI tool. The bubble sizes show how many actions fall under each category, helping pinpoint where NDC–SDG acceleration is most likely.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 4: Dark Panel (Duplicate 2) -->
+        <section id="section-4-duplicate-2" class="grid-container full" style="padding:0;max-width:100%;">
+            <div class="grid-x grid-padding-x" style="position:relative;">
+                <!-- Dark Background Panel (Full Width) -->
+                <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:#2C3E50;z-index:1;"></div>
+                
+                <!-- Content Area -->
+                <div class="cell small-12" style="padding:4rem 3rem;color:white;z-index:2;position:relative;">
+                    <!-- Header Row -->
+                    <!-- <div style="margin-bottom:3rem;">
+                        <p style="color:white;font-size:1.1rem;line-height:1.6;margin:0;">This analysis shows the most prominent SDGs in each of the two national strategies on climate and development. This identifies areas of common action and potential synergies across national climate and development priorities.</p>
+                    </div> -->
+
+                    <!-- Section Title -->
+                    <h4 style="color:#ffffff;font-weight:700;margin-bottom:2rem;font-size:1.4rem;">Dominican Republic 's NDC includes actions in these sectors:</h4>
+
+                    <div class="grid-x grid-padding-x">
+                        <div class="cell small-12 medium-6" style="padding-right:1.5rem;">
+                            <h5 style="color:#ffffff;font-weight:700;margin-bottom:1.5rem;font-size:1.4rem;">Mitigation</h5>
+                            <div style="background:#FFFFFF;padding:2rem;border-radius:8px;min-height:450px;display:flex;align-items:center;justify-content:center;border:1px solid #E0E0E0;box-shadow:0 4px 12px rgba(0,0,0,0.08);overflow:hidden;position:relative;">
+                                <div style="transform:scale(1.1);transform-origin:center center;width:100%;height:100%;">
+                                    <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/22886809" style="width:100%;height:100%;min-height:320px;"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22886809/thumbnail" width="100%" alt="bubble-chart visualization" /></noscript></div>
+                                </div>
+                            </div>
+                            <!-- <p style="font-size:0.85rem;color:#B0B8C0;margin-top:1rem;font-style:italic;">Note: Based on NDC 2.0 (2021)</p> -->
+                        </div>
+
+                        <div class="cell small-12 medium-6" style="padding-left:1.5rem;">
+                            <h5 style="color:#ffffff;font-weight:700;margin-bottom:1.5rem;font-size:1.4rem;">Adaptation</h5>
+                            <div style="background:#FFFFFF;padding:2rem;border-radius:8px;min-height:450px;display:flex;align-items:center;justify-content:center;border:1px solid #E0E0E0;box-shadow:0 4px 12px rgba(0,0,0,0.08);overflow:hidden;position:relative;">
+                                <div style="transform:scale(1.1);transform-origin:center center;width:100%;height:100%;">
+                                    <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/22910360" style="width:100%;height:100%;min-height:320px;"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22910360/thumbnail" width="100%" alt="bubble-chart visualization" /></noscript></div>
+                                </div>
+                            </div>
+                            <!-- <p style="font-size:0.85rem;color:#B0B8C0;margin-top:1rem;font-style:italic;">Note: Based on: 1) Pentagonal Strategy Phase I; 2) National Strategic Development Plan (NSDP) 2019-2023; 3) Mid-Term Review NSDP 2019-2023; 4) Rectangular Strategy Phase IV; 5) Pentagon Strategy 2024-2028 Phase I</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Bottom Note -->
+                    <div style="margin-top:3rem;">
+                        <!-- <p style="font-size:0.9rem;color:#B0B8C0;text-align:center;font-style:italic;">These visuals are generated by analyzing the NDCs and National Development Plans through the SDG framework at goal level.</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 5: NDC x SDG Interlinkages -->
+        <section id="interlinkages" class="grid-container" style="padding:3rem 0; max-width:1200px; margin:0 auto;">
+            <div class="grid-x grid-padding-x interlinkages-mobile-wrap">
+                            <style>
+                            /* Mobile optimization for Section 3: NDC x SDG Interlinkages and Section 6: SDG Targets with safe edge padding */
+                            @media (max-width: 767px) {
+                                #interlinkages {
+                                    padding: 1.2rem 1rem 0.5rem 1rem !important;
+                                }
+                                #interlinkages .interlinkages-mobile-wrap,
+                                #interlinkages .cell.small-12,
+                                #interlinkages .cell.small-12.medium-5.large-4,
+                                #interlinkages .cell.small-12.medium-7.large-8 {
+                                    padding-left: 0 !important;
+                                    padding-right: 0 !important;
+                                }
+                                #interlinkages h3, #interlinkages h4, #interlinkages p, #interlinkages ul, #interlinkages li, #interlinkages .expandable {
+                                    margin-left: 0 !important;
+                                    margin-right: 0 !important;
+                                }
+                                /* Section 6: Expandable SDG Targets */
+                                #sdg-targets {
+                                    padding: 1.2rem 1rem 0.5rem 1rem !important;
+                                }
+                                #sdg-targets .grid-x.grid-padding-x,
+                                #sdg-targets .cell.small-12 {
+                                    padding-left: 0 !important;
+                                    padding-right: 0 !important;
+                                }
+                                #sdg-targets h3, #sdg-targets h4, #sdg-targets p, #sdg-targets ul, #sdg-targets li, #sdg-targets .expandable {
+                                    margin-left: 0 !important;
+                                    margin-right: 0 !important;
+                                }
+                                /* Expandable SDG Target items (if any custom class) */
+                                .expandable {
+                                    border-radius: 8px;
+                                    margin-bottom: 1.5rem !important;
+                                    padding-left: 0 !important;
+                                    padding-right: 0 !important;
+                                }
+                            }
+                            </style>
+                <!-- Left Column: Heading -->
+                <div class="cell small-12 medium-5 large-4">
+                    <h4 style="margin-top:0; font-weight:600; white-space:nowrap;">3. NDC x SDG Interlinkages</h4>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="cell small-12 medium-7 large-8">
+                    <p>NDC x SDG interlinkages reveal how climate actions can impact human development progress. Building from the country's NDC actions and SDG priorities, the following integrated SDG pathways reflect NDC actions with the most potential to accelerate the SDGs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 6: Expandable SDG Targets -->
+        <section id="sdg-targets" class="grid-container" style="padding:3rem 0; max-width:1200px; margin:0 auto;">
+            <div class="grid-x grid-padding-x">
+                    
+                        <!-- SDG Item: sdg_7_3 -->
+                        <div style="width:100%;">
+                            <button onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.chevron').style.transform = this.nextElementSibling.style.display === 'none' ? 'rotate(0deg)' : 'rotate(180deg)';" style="width:100%;background:white;border:none;padding:1.5rem 0;text-align:left;cursor:pointer;display:block;">
+                              <span style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                                <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Double the rate of improvement in energy efficiency</h5>
+                                <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" style="transition:transform 0.3s;margin-left:0.5rem;vertical-align:middle;display:inline-block;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L6 6L11 1" stroke="#E74C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </span>
+                            </button>
+                            <div style="display:none;padding:1.5rem 0;background:white;">
+                                <div class="grid-x grid-padding-x">
+                  <!-- Left Column -->
+                  <div class="cell small-12 medium-6" style="padding-right:1.5rem;">
+                    <div style="background:white;padding:2rem;border-radius:12px;border:1px solid #e0e0e0;display:flex;flex-direction:column;gap:1rem;">
+                      <div style="display:flex;align-items:center;gap:1rem;">
+                        <div style="background:#FEC30C;color:white;padding:0.5rem 1.25rem;border-radius:20px;font-weight:700;font-size:0.85rem;white-space:nowrap;">SDG 7.3</div>
+                        <h4 style="color:#FEC30C;font-weight:700;font-size:1.1rem;margin:0;line-height:1.3;">Double the rate of improvement in energy efficiency</h4>
+                      </div>
+                      <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                These three climate actions from the Dominican Republic’s NDC 2020 directly advance SDG target 7.3 by promoting energy efficiency across sectors. The air conditioning replacement program applies Minimum Energy Performance Standards to 689,389 units, significantly lowering electricity use. Green building codes in new constructions cut energy demand by 10% annually, while high-efficiency electric motors in industry further reduce consumption and emissions, strengthening the country’s sustainable growth agenda consistent with long-term national strategies like Meta RD 2036.
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                These energy efficiency actions can accelerate three additional SDG targets. SDG 11.6 (reduce environmental impact of cities) benefits from reduced urban energy consumption and emissions through efficient buildings and appliances. SDG 13.2 (integrate climate measures into policies) is advanced through concrete mitigation actions reducing 4,481.13 Gg CO2eq combined. SDG 9.4 (upgrade infrastructure for sustainability) is supported by establishing green building standards, creating more sustainable and resilient urban systems.
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                SDG 7.3 creates significant cross-sectoral impacts on multiple development targets. It accelerates SDG 8.5 (decent work and economic growth) by generating employment in green technology sectors and reducing energy costs for businesses. SDG 16.6 (effective institutions) benefits from enhanced regulatory frameworks and monitoring systems for energy efficiency standards. SDG 11.6 (sustainable cities) is advanced through reduced urban environmental impact via lower energy consumption, decreased emissions, and improved air quality from efficient buildings and infrastructure systems.
+                                            </p>
+                    </div>
+                  </div>
+                                    
+                  <!-- Right Column (Split Top/Bottom) -->
+                  <div class="cell small-12 medium-6" style="padding-left:1.5rem;">
+                    <!-- Top Half -->
+                    <div style="margin-bottom:1.5rem;">
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Priority NDC Activities</h5>
+                      <div style="background:#f8f9fa;padding:2rem 2rem 2rem 1.25rem;border-radius:8px;display:flex;align-items:stretch;gap:0;min-height:160px;">
+                        <!-- Activity 1 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 1</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>New standards for the acquisition of industrial electric motors.</strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 2 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 2</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Energy Efficiency Standards in New Constructions</strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 3 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 3</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Air Conditioning Replacement Program with More Efficient Standards</strong></p>
+                                                </div>
+                      </div>
+                    </div>
+                                        
+                    <!-- Bottom Half -->
+                    <div>
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">NDC synergies with the priority SDGs</h5>
+                      <style>
+                        .undp-viz-container-7-3 {
+                          width: 100%;
+                          overflow: hidden;
+                          position: relative;
+                          height: 560px;
+                        }
+                        .undp-viz-scaled-7-3 {
+                          transform: scale(0.5);
+                          transform-origin: top left;
+                          width: 200%;
+                          padding-bottom: 60px;
+                        }
+                        /* Special case for SDG 9.1 (Cambodia interlinkages) to fit 5 activities, but use same scale as 9.4 for uniformity */
+                        .undp-viz-container-9-1 {
+                          height: 750px !important;
+                        }
+                        .undp-viz-scaled-9-1 {
+                          transform: scale(0.5) !important;
+                          width: 200% !important;
+                        }
+                      </style>
+                      <div class="undp-viz-container-7-3">
+                        <div class="undp-viz-scaled-7-3">
+                          <script defer="defer" type="module" src="https://viz-tool.data.undp.org/index.js"></script>
+                          <link rel="stylesheet" href="https://viz-tool.data.undp.org/style.css" crossorigin="anonymous">
+                          <link rel="stylesheet" href="https://use.typekit.net/jtg8msg.css" crossorigin="anonymous">
+                          <div class="undp-div-tool-graph-embed" data-src="8fefd0ba1427266bbb51d44aa9248627"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!-- SDG Item: sdg_8_4 -->
+                        <div style="width:100%;">
+                            <button onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.chevron').style.transform = this.nextElementSibling.style.display === 'none' ? 'rotate(0deg)' : 'rotate(180deg)';" style="width:100%;background:white;border:none;padding:1.5rem 0;text-align:left;cursor:pointer;display:block;">
+                              <span style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                                <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Improve resource efficiency in consumption and production</h5>
+                                <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" style="transition:transform 0.3s;margin-left:0.5rem;vertical-align:middle;display:inline-block;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L6 6L11 1" stroke="#E74C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </span>
+                            </button>
+                            <div style="display:none;padding:1.5rem 0;background:white;">
+                                <div class="grid-x grid-padding-x">
+                  <!-- Left Column -->
+                  <div class="cell small-12 medium-6" style="padding-right:1.5rem;">
+                    <div style="background:white;padding:2rem;border-radius:12px;border:1px solid #e0e0e0;display:flex;flex-direction:column;gap:1rem;">
+                      <div style="display:flex;align-items:center;gap:1rem;">
+                        <div style="background:#A21942;color:white;padding:0.5rem 1.25rem;border-radius:20px;font-weight:700;font-size:0.85rem;white-space:nowrap;">SDG 8.4</div>
+                        <h4 style="color:#A21942;font-weight:700;font-size:1.1rem;margin:0;line-height:1.3;">Improve resource efficiency in consumption and production</h4>
+                      </div>
+                      <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                Converting fuel oil power plants to natural gas has the largest structural impact, improving efficiency, lowering system costs, and cutting the national carbon footprint. In cement production, replacing pet coke with biomass decouples output from fossil fuels, boosting eco-efficiency. Further reducing clinker content decreases energy use and raw material demand. Together, these actions enable sustained economic growth while sharply reducing environmental degradation, directly advancing SDG target 8.4 on resource efficiency and decoupling economic growth from environmental degradation.
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                The implementation of these three industrial actions could generate benefits that go beyond SDG target 8.4. The conversion to natural gas and the use of biomass (SDG target 7.2) reduce air pollution, improving health and well-being (SDG target 3.9) and makes cities more sustainable (SDG target 11.6). The reduction of clinker and the valorization of waste could foster industrial innovation (SDG target 9.4) as well as  promote responsible consumption and production patterns (SDG targets 12.2 and 12.5), directly contributing to climate action (SDG target 13.2).
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                SDG Target 8.4 connects also with Target 16.6 by requiring effective institutions that ensure transparent resource efficiency policies; with Target  10.1 by promoting more sustainable and inclusive economic growth that reduces inequalities; and with Target 11.6 by decreasing pollution and waste, thereby improving urban sustainability. 
+                                            </p>
+                    </div>
+                  </div>
+                                    
+                  <!-- Right Column (Split Top/Bottom) -->
+                  <div class="cell small-12 medium-6" style="padding-left:1.5rem;">
+                    <!-- Top Half -->
+                    <div style="margin-bottom:1.5rem;">
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Priority NDC Activities</h5>
+                      <div style="background:#f8f9fa;padding:2rem 2rem 2rem 1.25rem;border-radius:8px;display:flex;align-items:stretch;gap:0;min-height:160px;">
+                        <!-- Activity 1 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 1</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Conversion fuel oil power generation units in the electricity system to lower-GWP natural gas.</strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 2 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 2</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Use of alternative fuels (including biomass) as a substitute for conventional fossil fuels (coal/pet coke, etc.)</strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 3 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 3</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Further reduction of clinker content in Dominican cement.</strong></p>
+                                                </div>
+                      </div>
+                    </div>
+                                        
+                    <!-- Bottom Half -->
+                    <div>
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">NDC synergies with the priority SDGs</h5>
+                      <style>
+                        .undp-viz-container-8-4 {
+                          width: 100%;
+                          overflow: hidden;
+                          position: relative;
+                          height: 560px;
+                        }
+                        .undp-viz-scaled-8-4 {
+                          transform: scale(0.5);
+                          transform-origin: top left;
+                          width: 200%;
+                          padding-bottom: 60px;
+                        }
+                        /* Special case for SDG 9.1 (Cambodia interlinkages) to fit 5 activities, but use same scale as 9.4 for uniformity */
+                        .undp-viz-container-9-1 {
+                          height: 750px !important;
+                        }
+                        .undp-viz-scaled-9-1 {
+                          transform: scale(0.5) !important;
+                          width: 200% !important;
+                        }
+                      </style>
+                      <div class="undp-viz-container-8-4">
+                        <div class="undp-viz-scaled-8-4">
+                          <script defer="defer" type="module" src="https://viz-tool.data.undp.org/index.js"></script>
+                          <link rel="stylesheet" href="https://viz-tool.data.undp.org/style.css" crossorigin="anonymous">
+                          <link rel="stylesheet" href="https://use.typekit.net/jtg8msg.css" crossorigin="anonymous">
+                          <div class="undp-div-tool-graph-embed" data-src="5393635c13ec9b44bb390b33fe9b8876"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!-- SDG Item: sdg_11_5 -->
+                        <div style="width:100%;">
+                            <button onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.chevron').style.transform = this.nextElementSibling.style.display === 'none' ? 'rotate(0deg)' : 'rotate(180deg)';" style="width:100%;background:white;border:none;padding:1.5rem 0;text-align:left;cursor:pointer;display:block;">
+                              <span style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                                <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Reduce the adverse effects of natural disasters</h5>
+                                <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" style="transition:transform 0.3s;margin-left:0.5rem;vertical-align:middle;display:inline-block;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L6 6L11 1" stroke="#E74C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </span>
+                            </button>
+                            <div style="display:none;padding:1.5rem 0;background:white;">
+                                <div class="grid-x grid-padding-x">
+                  <!-- Left Column -->
+                  <div class="cell small-12 medium-6" style="padding-right:1.5rem;">
+                    <div style="background:white;padding:2rem;border-radius:12px;border:1px solid #e0e0e0;display:flex;flex-direction:column;gap:1rem;">
+                      <div style="display:flex;align-items:center;gap:1rem;">
+                        <div style="background:#FFAC4D;color:white;padding:0.5rem 1.25rem;border-radius:20px;font-weight:700;font-size:0.85rem;white-space:nowrap;">SDG 11.5</div>
+                        <h4 style="color:#FFAC4D;font-weight:700;font-size:1.1rem;margin:0;line-height:1.3;">Reduce the adverse effects of natural disasters</h4>
+                      </div>
+                      <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                Early warning systems, resilient urban planning, and strong building codes reduce disaster mortality and economic losses, enhancing national resilience. These actions advance SDG 11.5 and the NDC’s adaptation goals, while supporting Meta RD 2036 by safeguarding infrastructure, human capital, and productivity. This creates a feedback loop: NDC measures strengthen SDG achievement, and together they reinforce the long-term, inclusive, and sustainable growth path required to double GDP by 2036.
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                These three actions also advance SDG 1, 3, and 16. By reducing disaster-related losses, they protect livelihoods and assets, preventing people from falling into poverty (SDG 1). Strengthened infrastructure and early warnings reduce injuries, disease, and deaths from extreme events, improving public health and well-being (SDG 3). Moreover, effective planning, building regulation, and risk management enhance institutional capacity and accountability, fostering trust and stronger governance systems (SDG 16). Together, they promote resilience, safety, and inclusive sustainable development.
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                SDG 11.5 is closely linked to SDG targets 13.1, 6.2, and 7.1. Strengthening resilience to disasters (11.5) directly supports climate adaptation and risk reduction (13.1). Improved water and sanitation systems (6.2) are essential for protecting communities from flood-related contamination. Expanding access to reliable and clean energy (7.1) enables early warning systems and resilient infrastructure. Together, these targets reinforce community safety, reduce vulnerabilities, and promote sustainable urban and climate-resilient development.
+                                            </p>
+                    </div>
+                  </div>
+                                    
+                  <!-- Right Column (Split Top/Bottom) -->
+                  <div class="cell small-12 medium-6" style="padding-left:1.5rem;">
+                    <!-- Top Half -->
+                    <div style="margin-bottom:1.5rem;">
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Priority NDC Activities</h5>
+                      <div style="background:#f8f9fa;padding:2rem 2rem 2rem 1.25rem;border-radius:8px;display:flex;align-items:stretch;gap:0;min-height:160px;">
+                        <!-- Activity 1 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 1</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Improve urban planning and land use to promote climate resilience.</strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 2 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 2</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Improve building codes to integrate climate risk.</strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 3 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 3</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Enhance the early warning system for hydro-meteorological events.</strong></p>
+                                                </div>
+                      </div>
+                    </div>
+                                        
+                    <!-- Bottom Half -->
+                    <div>
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">NDC synergies with the priority SDGs</h5>
+                      <style>
+                        .undp-viz-container-11-5 {
+                          width: 100%;
+                          overflow: hidden;
+                          position: relative;
+                          height: 560px;
+                        }
+                        .undp-viz-scaled-11-5 {
+                          transform: scale(0.5);
+                          transform-origin: top left;
+                          width: 200%;
+                          padding-bottom: 60px;
+                        }
+                        /* Special case for SDG 9.1 (Cambodia interlinkages) to fit 5 activities, but use same scale as 9.4 for uniformity */
+                        .undp-viz-container-9-1 {
+                          height: 750px !important;
+                        }
+                        .undp-viz-scaled-9-1 {
+                          transform: scale(0.5) !important;
+                          width: 200% !important;
+                        }
+                      </style>
+                      <div class="undp-viz-container-11-5">
+                        <div class="undp-viz-scaled-11-5">
+                          <script defer="defer" type="module" src="https://viz-tool.data.undp.org/index.js"></script>
+                          <link rel="stylesheet" href="https://viz-tool.data.undp.org/style.css" crossorigin="anonymous">
+                          <link rel="stylesheet" href="https://use.typekit.net/jtg8msg.css" crossorigin="anonymous">
+                          <div class="undp-div-tool-graph-embed" data-src="9ed3295ba6808d059bc5dc9368b2a077"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!-- SDG Item: sdg_16_6 -->
+                        <div style="width:100%;">
+                            <button onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.querySelector('.chevron').style.transform = this.nextElementSibling.style.display === 'none' ? 'rotate(0deg)' : 'rotate(180deg)';" style="width:100%;background:white;border:none;padding:1.5rem 0;text-align:left;cursor:pointer;display:block;">
+                              <span style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                                <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Develop effective, accountable and transparent institutions</h5>
+                                <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" style="transition:transform 0.3s;margin-left:0.5rem;vertical-align:middle;display:inline-block;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L6 6L11 1" stroke="#E74C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </span>
+                            </button>
+                            <div style="display:none;padding:1.5rem 0;background:white;">
+                                <div class="grid-x grid-padding-x">
+                  <!-- Left Column -->
+                  <div class="cell small-12 medium-6" style="padding-right:1.5rem;">
+                    <div style="background:white;padding:2rem;border-radius:12px;border:1px solid #e0e0e0;display:flex;flex-direction:column;gap:1rem;">
+                      <div style="display:flex;align-items:center;gap:1rem;">
+                        <div style="background:#00689D;color:white;padding:0.5rem 1.25rem;border-radius:20px;font-weight:700;font-size:0.85rem;white-space:nowrap;">SDG 16.6</div>
+                        <h4 style="color:#00689D;font-weight:700;font-size:1.1rem;margin:0;line-height:1.3;">Develop effective, accountable and transparent institutions</h4>
+                      </div>
+                      <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                The creation of a body of independent experts to formally evaluate the objectives, strategies, and progress of climate policy is a key step toward building more accountable and transparent institutions. By subjecting government decisions to external scrutiny, it ensures impartial oversight that strengthens accountability and limits discretion in public management. This mechanism not only reinforces citizens’ trust but also promotes stronger climate governance. Ultimately, it fosters a system that is more inclusive, resilient, and aligned with international standards of transparency, integrity, and responsibility.
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                In addition to SDG 16, these climate governance actions significantly strengthen other Sustainable Development Goals. The creation of citizen consultation and participation mechanisms directly boosts SDG 5 (Gender Equality) by ensuring the inclusion of women in decision-making. Likewise, it promotes SDG 17 (Partnerships for the Goals) as it encourages collaboration between the government, the private sector, and civil society. Finally, by improving the planning and transparency of climate policies, it positively impacts SDG 13 (Climate Action).
+                                            </p>
+                                            <p style="color:#2C3E50;font-size:0.95rem;line-height:1.6;margin:0;">
+                                                Investing in a more effective governance and improving resource allocation efficiency  (target 16.6) , will support the achievement of target 8.1 on sustained economic growth, as stable institutions create an environment for investment and productivity. Transparent and fair institutions also advance target 10.1 by reducing inequality through equitable policies. Furthermore, accountable governance enhances target 3.8 by enabling universal access to essential health services.
+                                            </p>
+                    </div>
+                  </div>
+                                    
+                  <!-- Right Column (Split Top/Bottom) -->
+                  <div class="cell small-12 medium-6" style="padding-left:1.5rem;">
+                    <!-- Top Half -->
+                    <div style="margin-bottom:1.5rem;">
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">Priority NDC Activities</h5>
+                      <div style="background:#f8f9fa;padding:2rem 2rem 2rem 1.25rem;border-radius:8px;display:flex;align-items:stretch;gap:0;min-height:160px;">
+                        <!-- Activity 1 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 1</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Creation of an independent expert advisory and evaluation mechanism </strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 2 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 2</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Establishment of a citizen consultation council on climate change </strong></p>
+                                                </div>
+                                                <!-- Divider -->
+                                                <div style="width:1px;background:#0A97D9;margin:0 0.4rem;flex-shrink:0;"></div>
+<!-- Activity 3 -->
+                                                <div style="flex:1;padding:0 0.4rem;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;">
+                                                    <div style="background:#0A97D9;color:white;padding:0.4rem 0.85rem;border-radius:15px;font-weight:700;font-size:0.75rem;margin-bottom:0.6rem;white-space:nowrap;">Activity 3</div>
+                                                    <p style="color:#2C3E50;font-size:0.78rem;line-height:1.4;margin:0;"><strong>Development of a National Strategy for Action for Climate Empowerment </strong></p>
+                                                </div>
+                      </div>
+                    </div>
+                                        
+                    <!-- Bottom Half -->
+                    <div>
+                      <h5 style="color:#2C3E50;font-weight:700;font-size:1.4rem;margin:0 0 1.4rem 0;">NDC synergies with the priority SDGs</h5>
+                      <style>
+                        .undp-viz-container-16-6 {
+                          width: 100%;
+                          overflow: hidden;
+                          position: relative;
+                          height: 560px;
+                        }
+                        .undp-viz-scaled-16-6 {
+                          transform: scale(0.5);
+                          transform-origin: top left;
+                          width: 200%;
+                          padding-bottom: 60px;
+                        }
+                        /* Special case for SDG 9.1 (Cambodia interlinkages) to fit 5 activities, but use same scale as 9.4 for uniformity */
+                        .undp-viz-container-9-1 {
+                          height: 750px !important;
+                        }
+                        .undp-viz-scaled-9-1 {
+                          transform: scale(0.5) !important;
+                          width: 200% !important;
+                        }
+                      </style>
+                      <div class="undp-viz-container-16-6">
+                        <div class="undp-viz-scaled-16-6">
+                          <script defer="defer" type="module" src="https://viz-tool.data.undp.org/index.js"></script>
+                          <link rel="stylesheet" href="https://viz-tool.data.undp.org/style.css" crossorigin="anonymous">
+                          <link rel="stylesheet" href="https://use.typekit.net/jtg8msg.css" crossorigin="anonymous">
+                          <div class="undp-div-tool-graph-embed" data-src="79212fb257434a2d747775fd16da89b3"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+        </section>
+
+        <!-- SDG Divider (between Sections 6 and 7) -->
+
+                <!-- Section 7: Finance & Stimulus -->
+                        <!-- SDG Divider (after Section 7) -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+                    <section id="finance-stimulus" class="grid-container" style="padding:3rem 0; max-width:1200px; margin:0 auto;">
+                                <style>
+                                /* Finance & Stimulus Section Mobile Optimization */
+                                @media (max-width: 767px) {
+                                    #finance-stimulus {
+                                        padding-left: 1rem !important;
+                                        padding-right: 1rem !important;
+                                    }
+                                }
+                                </style>
+                    <div class="grid-x grid-padding-x">
+                        <!-- Left Column: Heading -->
+                        <div class="cell small-12 medium-5 large-4">
+                            <h4 style="margin-top:0; font-weight:600; white-space:nowrap;">4. Finance & Stimulus</h4>
+                        </div>
+
+                        <!-- Right Column: Content -->
+                        <div class="cell small-12 medium-7 large-8">
+                            <p>This section examines a country's fiscal space and public investment priorities, highlighting opportunities to align stimulus measures with SDG progress and accelerated climate action.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+        <!-- SDG Divider (after Section 7) -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 8: Finance Indicators Panel -->
+        <section id="finance-panel" class="grid-container full" style="padding:0;max-width:100%;">
+            <div class="grid-x grid-padding-x" style="position:relative;">
+                <!-- Dark Background Panel -->
+                <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:#2C3E50;z-index:1;"></div>
+
+                <!-- Content Area -->
+                <div class="cell small-12" style="padding:4rem 3rem;color:white;z-index:2;position:relative;">
+                    <div class="grid-x grid-padding-x">
+                        <!-- Left Column: Text with Show More -->
+                        <div class="cell small-12 medium-6 large-6" style="padding-right:2rem;">
+                            <p style="font-size:1rem;color:#FFFFFF;line-height:1.6;margin:0 0 1rem 0;">
+                                Many countries are facing reduced fiscal space, high debt levels, rising interest rates and downgrades on credit ratings. Fiscal and financial constraints tend to slow or even reverse SDG progress.  
+
+                            </p>
+                            
+                            <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'; this.querySelector('.chevron').style.transform=this.nextElementSibling.style.display==='none'?'rotate(0deg)':'rotate(180deg)';" style="background:transparent;border:none;color:white;font-size:1rem;font-weight:600;cursor:pointer;padding:0.5rem 0;display:flex;align-items:center;">
+                                Show more 
+                                <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" style="margin-left:0.5rem;transition:transform 0.3s;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L6 6L11 1" stroke="#E74C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            
+                            <div style="display:none;margin-top:1rem;">
+                                <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">The radar diagram shows low frequency data points linked to government revenue, debt and natural resources rents as a proportion of GDP. The financial indicator graphs show external debt servicing relative to revenue and the country’s latest Debt Sustainability Assessment (DSA) risk rating. </p>
+                                <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">The Dominican Republic's gross government debt is expected at 58.2% of GDP in 2025, which is 1.9 percentage points (pp) below the emerging market and middle-income economies’ (EMMIE) average of 60.1%. The country is expected to collect 15.3% of GDP in revenue this year, thus about half of the EMMIE average of 31%.</p>
+                                <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">The Dominican Republic’s external debt servicing this year is expected to reach 14.1% of revenue, which is 1.7 pp below the EMMIE average of 12.4%. The country’s credit rating is in the ‘speculative’ category, above the EMMIE ‘highly speculative’ average.</p>
+                                <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">According to the IMF, Dominican Republic’s economy grew around 5% in 2024, but spending pushed up fiscal deficits and debt. The World Bank highlights fiscal pressures: revenue mobilization is only 16.3% of GDP, debt is above pre pandemic levels, and energy losses and interest payments (1.2% and 3.4% of GDP) restrict investment. A fiscal responsibility law caps primary expenditure growth and aims to reduce debt to 40% by 2035.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Images -->
+                        <div class="cell small-12 medium-6 large-6" style="padding-left:2rem;">
+                            <img src="../assets/dvfile/dom_finance.png" alt="Fiscal indicators visualization" style="width:100%;height:auto;border-radius:4px;margin-bottom:1rem;">
+                            
+                            <!-- Caption text under image, on dark panel -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider (after Section 8) -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 11: Explore other NDC x SDG Insights -->
+        <section id="public-finance" class="grid-container full" style="padding:0;max-width:100%;">
+            <div class="grid-x grid-padding-x" style="position:relative;">
+                <!-- Dark Background Panel -->
+                <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:#2C3E50;z-index:1;"></div>
+
+                <!-- Content Area -->
+                <div class="cell small-12" style="padding:4rem 3rem;color:white;z-index:2;position:relative;">
+                    <!-- Section Title -->
+                    <h4 style="color:white;margin:0 0 2rem 0; font-weight:600;">Public Finance</h4>
+                    
+                    <div class="grid-x grid-padding-x">
+                        <!-- Left Column: Content -->
+                        <div class="cell small-12 medium-6 large-6" style="padding-right:2rem;">
+                                <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">Financing needs</h4>
+                                <div style="border-left:4px solid #4A90E2;padding-left:1.5rem;margin-bottom:1.5rem;">
+                                    <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;"><strong>SDGs:</strong>  Over 6,900 million USD per annum in capital investment required for achieving SDGs (IMF)</p>
+                                      <ul style="color:white;font-size:0.95rem;line-height:1.6;margin:0.5rem 0 0 1.5rem;padding:0;">
+
+                                    </ul>
+                                    <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0;"><strong>NDC:</strong> Total: Estimated 20.45 billion USD total by 2030</p>
+                                    <ul style="color:white;font-size:0.95rem;line-height:1.6;margin:0.5rem 0 0 1.5rem;padding:0;">
+                                        <li>10.34 billion USD for mitigation</li>
+                                        <li>10.11 billion USD for adaptation</li>
+                                    </ul>
+                                </div>
+
+              <div style="margin-bottom:4rem;">
+                <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">Financing strategy</h4>
+                <div style="border-left:4px solid #4A90E2;padding-left:1.5rem;">
+                  <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">The Dominican Republic is advancing in mobilizing financial resources to meet its climate and sustainable development commitments. Since 2021, it has been reviewing its planning and budget management to strengthen investment decisions, monitoring, and spending efficiency. The country is designing a National Climate Finance Strategy that promotes green financing instruments, long-term public-private cooperation, and enhanced engagement with the Green Climate Fund, with estimated investments exceeding USD 20.45 billion in mitigation and adaptation for 2021–2030.</p>
+                  <ul style="color:white;font-size:0.95rem;line-height:1.6;margin:0;padding:0 0 0 1.5rem;">
+                    
+                  </ul>
+                </div>
+              </div>
+
+                        </div>
+
+                        <!-- Right Column: Content -->
+                        <div class="cell small-12 medium-6 large-6" style="padding-left:2rem;">
+                            <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">Expenditures & budgets</h4>
+<p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">The Dominican Republic’s public budgeting system aligns with the SDGs through its linkage to the National Planning and Public Investment System. The 2024–2027 Multiannual Budget Framework prioritizes key sectors like health, education, environment, and social protection, assigning and protecting budgets annually. However, SDG alignment could improve through systematic budget tagging and stronger programmatic integration.</p>
+                            <div style="margin-bottom:2rem;">
+                                <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">Debt instruments</h4>
+                                <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">The Dominican Republic issued its first sovereign green bond on June 25, 2024, in the international market for USD 750 million, with a 12-year maturity and a coupon of approximately 6.6 percent. It also adopted a Green, Social, and Sustainability Bond Framework in June 2024, defining eligible sectors such as clean transport, renewable energy, waste management, water, health, and education.</p>
+                            </div>
+
+        <div style="margin-bottom:0;">
+          <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">International climate finance</h4>
+          <p style="color:white;font-size:0.95rem;line-height:1.6;margin:0 0 1rem 0;">The Dominican Republic has received international climate finance from the Green Climate Fund through projects such as FP174 with USD 174.3 million, FP242, and FP237; the Adaptation Fund with approximately USD 10 million; and the Global Environment Facility with USD 12.6 million in grants via the Small Grants Programme. It also benefits from Euroclima technical assistance and an endorsed USD 85 million Climate Investment Funds plan.</p>
+          
+        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Divider (after Section 11) -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 13: Dark Panel -->
+        <section id="dark-panel-section" class="grid-container full" style="padding:0;max-width:100%;">
+            <div class="grid-x grid-padding-x" style="position:relative;">
+                <!-- Split Background: White Left, Dark Right -->
+                <div class="split-bg-left"></div>
+                <div class="split-bg-right"></div>
+
+                <!-- Content Area -->
+                <div class="cell small-12" style="padding:4rem 3rem;z-index:2;position:relative;">
+                    <div class="grid-x grid-padding-x">
+                        <!-- Left Column -->
+                        <div class="cell small-12 medium-6 large-6" style="padding-right:2rem;">
+                            <h4 style="color:#2C3E50;margin:0 0 2rem 0; font-weight:600;">Private Finance & Economy</h4>
+                            <h4 style="color:#2C3E50;font-weight:600;font-size:1.4rem;margin:0 0 1.5rem 0;">Policy & Regulatory Measures:</h4>
+                            <div style="width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;">
+                              <iframe 
+                                  class="policy-reg-embed-iframe"
+                                  src="../assets/dvfile/dom-pfe.html" 
+                                  width="900" 
+                                  height="600" 
+                                  frameborder="0"
+                                  scrolling="no"
+                                  style="border: none;display:inline-block;"
+                              ></iframe>
+                            </div>
+                            <style>
+                              @media (max-width: 767px) {
+                                .policy-reg-embed-iframe {
+                                  height: 900px !important;
+                                }
+                              }
+                            </style>
+
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="cell small-12 medium-6 large-6" style="padding-left:2rem;">
+                            <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">Innovative Instruments:</h4>
+                                <p style="color:white;font-size:0.9rem;line-height:1.6;margin:0 0 1.5rem 0;">A total of thirteen innovative financial instruments were identified and assessed to support the financing of the National Development Strategy and the prioritized Sustainable Development Goals. Among them are thematic bonds, including green, social, sustainable, and sustainability-linked bonds, debt-for-nature swaps, diaspora financing through various forms of remittances and equity participation, payments for environmental services, Public-Private Partnerships for sustainable development, carbon credits, and carbon taxes</p>
+                            <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">International Investment:</h4>
+                                <p style="color:white;font-size:0.9rem;line-height:1.6;margin:0 0 1.5rem 0;">Recent international investments in the Dominican Republic include a USD 750 million sovereign green bond for clean transport and renewables, a USD 174 million GCF adaptation program, World Bank-backed climate reforms, IDB-financed water projects, and TotalEnergies’ renewable and LNG ventures supporting the country’s energy transition.</p>
+                            <h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">Domestic Investment:</h4>
+                                <p style="color:white;font-size:0.9rem;line-height:1.6;margin:0 0 1.5rem 0;">Private investment in the Dominican Republic averaged around 25% of GDP in recent years, supported by robust growth in construction, tourism, and FDI, though tight monetary policy in 2023 moderated expansion.</p>
+      <div style="background:#fff;padding:1.5rem 1rem 1rem 1rem;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.08);margin-bottom:2rem;">
+        <div style="width:100%;overflow-x:hidden;overflow-y:hidden;">
+          <div style="transform:scale(0.8);transform-origin:top left;width:125%;">
+            <iframe src="../assets/dvfile/dom_dom_inv.html" width="100%" height="420" style="border:none;display:block;border-radius:8px;background:#fff;min-height:320px;max-width:100%;object-fit:contain;" scrolling="no" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    
+
+<h4 style="color:white;font-weight:600;font-size:1.4rem;margin:0 0 1rem 0;">SDG Investor Map</h4>
+<p style="color:white;font-size:0.9rem;line-height:1.6;margin:0 0 1rem 0;">17 Investment Opportunity Areas (IOAs) that contribute to the government’s NDC priorities and meet SDG needs. The priority IOAs span 8 climate-relevant sectors in Dominican Republic:</p>
+
+      <div class="dom-ioa-sectors-grid-pill">
+        <div class="dom-ioa-row">
+          <div class="dom-ioa-sector-pill"><span>Renewable resources and energy</span></div><div class="dom-ioa-sector-pill"><span>Infrastructure</span></div><div class="dom-ioa-sector-pill"><span>Food and agriculture investments</span></div><div class="dom-ioa-sector-pill"><span>Healthcare</span></div>
+        </div>
+        <div class="dom-ioa-row">
+          <div class="dom-ioa-sector-pill"><span>Education</span></div><div class="dom-ioa-sector-pill"><span>Services</span></div><div class="dom-ioa-sector-pill"><span>Resources transformation</span></div><div class="dom-ioa-sector-pill"><span>Technology and Communication</span></div>
+        </div>
+      </div>
+      <style>
+        .dom-ioa-sectors-grid-pill {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          margin: 1.5rem 0 0.5rem 0;
+        }
+        .dom-ioa-row {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 0.5rem;
+        }
+        .dom-ioa-sector-pill {
+          background: #8aedab;
+          color: #333;
+          font-weight: 600;
+          border-radius: 20px;
+          padding: 0.7rem 1.2rem;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 100px;
+          min-height: 48px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+          border: none;
+        }
+        .dom-ioa-sector-pill span { display: block; text-align: center; }
+        @media (max-width: 900px) {
+          .dom-ioa-row { grid-template-columns: repeat(2, 1fr); }
+          .dom-ioa-sector-pill { font-size: 0.95rem; }
+        }
+        @media (max-width: 600px) {
+          .dom-ioa-row { grid-template-columns: 1fr; }
+          .dom-ioa-sector-pill { min-width: 0; width: 100%; }
+        }
+      </style>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Responsive override for Section 13 backgrounds and right panel -->
+            <style>
+            .split-bg-left {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                bottom: 0;
+                background: white;
+                z-index: 1;
+            }
+            .split-bg-right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                bottom: 0;
+                background: #2C3E50;
+                z-index: 1;
+            }
+            @media (max-width: 767px) {
+                #dark-panel-section .split-bg-left,
+                #dark-panel-section .split-bg-right {
+                    display: none !important;
+                }
+                #dark-panel-section .cell.small-12 {
+                    padding: 2rem 1rem !important;
+                }
+                #dark-panel-section .cell.small-12.medium-6.large-6[style*='padding-left'] {
+                    background: #2C3E50 !important;
+                    color: #fff !important;
+                    border-radius: 8px;
+                    padding: 2rem 1rem !important;
+                    margin-top: 2rem;
+                }
+                #dark-panel-section .cell.small-12.medium-6.large-6[style*='padding-left'] h4,
+                #dark-panel-section .cell.small-12.medium-6.large-6[style*='padding-left'] ul {
+                    color: #fff !important;
+                }
+            }
+            </style>
+        </section>
+
+        <!-- SDG Divider (after Section 13) -->
+        <div class="sdg-divider" style="height:6px;display:flex;margin:0;">
+            <div style="flex:1;background:#E5243B"></div>
+            <div style="flex:1;background:#DDA63A"></div>
+            <div style="flex:1;background:#4C9F38"></div>
+            <div style="flex:1;background:#C5192D"></div>
+            <div style="flex:1;background:#FF3A21"></div>
+            <div style="flex:1;background:#26BDE2"></div>
+            <div style="flex:1;background:#FCC30B"></div>
+            <div style="flex:1;background:#A21942"></div>
+            <div style="flex:1;background:#FD6925"></div>
+            <div style="flex:1;background:#DD1367"></div>
+            <div style="flex:1;background:#FD9D24"></div>
+            <div style="flex:1;background:#BF8B2E"></div>
+            <div style="flex:1;background:#3F7E44"></div>
+            <div style="flex:1;background:#0A97D9"></div>
+            <div style="flex:1;background:#56C02B"></div>
+            <div style="flex:1;background:#00689D"></div>
+            <div style="flex:1;background:#19486A"></div>
+        </div>
+
+        <!-- Section 14: Explore other NDC x SDG Insights -->
+        <!-- Section 9a: Development Breakthrough Policy Brief -->
+        
+        <section id="policy-brief" class="grid-container" style="padding:5rem 4rem;">
+            <div class="grid-x grid-padding-x policy-brief-row" style="align-items:stretch;">
+                <!-- Left: Title, summary, and policy brief link only -->
+                <div class="cell small-12 medium-6 large-6 policy-brief-text-col">
+                    <h3 style="margin:0 0 0.25rem 0; font-weight:800;">Development Breakthrough<br/>Policy Brief</h3>
+                    <div style="width:160px;height:3px;background:#0A97D9;margin:0.5rem 0 1rem 0;"></div>
+                    <p style="margin:0;color:#2C3E50;max-width:46ch;">Each NDC x SDG Insights policy brief is a focused, country-specific deep dive that builds on the broader Insights report to unpack a single development breakthrough, outlining its policy implications and the SDG-positive actions driving it forward.</p>
+                    <div style="margin-top:2rem;max-width:400px;">
+                        <a id="policy-brief-link" href="../assets/documents/Dominican Republic Policy Brief.pdf" style="margin-top:0;display:inline-block;padding:0.5rem 1.5rem;background:#f5f5f7;border-radius:6px;font-weight:600;color:#0A97D9;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:1rem;">Read Dominican Republic's Policy Brief</a>
+                    </div>
+                </div>
+                <!-- Right: Policy brief image -->
+                <div class="cell small-12 medium-6 large-6 policy-brief-img-col" style="display:flex;align-items:center;justify-content:center;">
+                    <img src="../assets/dvfile/brief.png" alt="Development Breakthrough Policy Brief" style="max-width:400px;width:100%;height:auto;border:none;background:none;box-shadow:none;border-radius:0;display:block;">
+                </div>
+            </div>
+            <style>
+            /* Policy Brief Section Mobile Optimization */
+            @media (max-width: 767px) {
+                #policy-brief {
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                }
+                #policy-brief .policy-brief-row {
+                    flex-direction: column !important;
+                    display: flex !important;
+                }
+                #policy-brief .policy-brief-text-col {
+                    order: 1;
+                    padding-right: 0 !important;
+                    padding-left: 0 !important;
+                    align-items: flex-start !important;
+                    text-align: left !important;
+                }
+                #policy-brief .policy-brief-img-col {
+                    order: 2;
+                    margin-top: 2.5rem !important;
+                    justify-content: center !important;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+                #policy-brief .policy-brief-img-col img {
+                    margin: 0 auto !important;
+                    max-width: 90vw !important;
+                }
+            }
+            </style>
+        </section>
+
+
+        <!-- Section 9: Explore other NDC x SDG Insights -->
+        <section id="explore-others" class="grid-container" style="padding:3rem 2rem;">
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12">
+                    <h3 style="margin:0 0 2rem 0; font-weight:800;">Explore other NDC x SDG Insights</h3>
+
+                    <!-- Carousel Container -->
+                    <div style="position:relative;padding:0 2rem;">
+                        <!-- Carousel Track -->
+                        <div id="flag-carousel" class="flag-container" style="display:flex;overflow:hidden;gap:3rem;scroll-behavior:smooth;justify-content:space-between;">
+                                                        <!-- Bhutan -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./bhutan.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Bhutan.svg" alt="Flag of Bhutan" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Bhutan
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Cambodia -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./cambodia.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Cambodia.svg" alt="Flag of Cambodia" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Cambodia
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Colombia -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./colombia.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Colombia.svg" alt="Flag of Colombia" style="max-width:80%;height:auto;display:block;margin:0 auto;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Colombia
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- El Salvador -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./el-salvador.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/El_Salvador.svg" alt="Flag of El Salvador" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      El Salvador
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Guatemala -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./guatemala.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Guatemala.svg" alt="Flag of Guatemala" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Guatemala
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Liberia -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./liberia.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Liberia.svg" alt="Flag of Liberia" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Liberia
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Nigeria -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./nigeria.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Nigeria.svg" alt="Flag of Nigeria" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Nigeria
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Philippines -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./philippines.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Philippines.svg" alt="Flag of Philippines" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Philippines
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Tunisia -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./tunisia.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Tunisia.svg" alt="Flag of Tunisia" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Tunisia
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+
+                            <!-- Uzbekistan -->
+                <div class="flag" style="flex:0 0 auto;width:18%;overflow:visible;">
+                  <a href="./uzbekistan.html" style="text-decoration:none;display:block;">
+                    <div style="overflow:hidden;">
+                      <img src="../assets/img/flags/Uzbekistan.svg" alt="Flag of Uzbekistan" style="width:100%;height:auto;display:block;">
+                    </div>
+                    <br><br>
+                    <span class="cta__link cta--arrow">
+                      Uzbekistan
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+                        </div>
+                        <!-- Carousel Arrows: Desktop (absolute, beside flags) -->
+                        <button id="flag-prev" class="flag-arrow-desktop" style="position:absolute;left:-28px;top:30%;transform:translateY(-50%);background:none;border:none;cursor:pointer;z-index:10;width:28px;height:56px;display:flex;align-items:center;justify-content:center;">
+                            <svg width="28" height="56" viewBox="0 0 28 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="18,28 10,36 18,44" fill="none" stroke="#DC3545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button id="flag-next" class="flag-arrow-desktop" style="position:absolute;right:-28px;top:30%;transform:translateY(-50%);background:none;border:none;cursor:pointer;z-index:10;width:28px;height:56px;display:flex;align-items:center;justify-content:center;">
+                            <svg width="28" height="56" viewBox="0 0 28 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="10,28 18,36 10,44" fill="none" stroke="#DC3545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <!-- Carousel Arrows: Mobile (below flags, centered) -->
+                        <div class="flag-carousel-arrows">
+                            <button id="flag-prev-mobile" style="background:#fff;border:1.5px solid #DC3545;border-radius:50%;cursor:pointer;z-index:10;width:36px;height:36px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(220,53,69,0.08);transition:box-shadow 0.2s;" aria-label="Scroll flags left">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="11" stroke="#DC3545" stroke-width="2" fill="#fff"/>
+                                    <path d="M15 7L9.5 12L15 17" stroke="#DC3545" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button id="flag-next-mobile" style="background:#fff;border:1.5px solid #DC3545;border-radius:50%;cursor:pointer;z-index:10;width:36px;height:36px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(220,53,69,0.08);transition:box-shadow 0.2s;" aria-label="Scroll flags right">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="11" stroke="#DC3545" stroke-width="2" fill="#fff"/>
+                                    <path d="M9 7L14.5 12L9 17" stroke="#DC3545" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <style>
+                            /* ================= FLAG NAV/CAROUSEL MOBILE OPTIMIZATION ================ */
+                            @media screen and (max-width: 768px) {
+                                .flag-container {
+                                    display: flex !important;
+                                    overflow-x: auto !important;
+                                    overflow-y: visible !important;
+                                    gap: 1.2rem !important;
+                                    padding-bottom: 0.5rem !important;
+                                    -webkit-overflow-scrolling: touch;
+                                    scroll-snap-type: x mandatory;
+                                }
+                                .flag-container .flag {
+                                    min-width: 120px !important;
+                                    width: 60vw !important;
+                                    max-width: 180px !important;
+                                    flex: 0 0 auto !important;
+                                    margin: 0 0.2rem !important;
+                                    scroll-snap-align: center;
+                                }
+                                #flag-carousel {
+                                    gap: 1rem !important;
+                                    overflow-x: auto !important;
+                                    justify-content: flex-start !important;
+                                }
+                                .flag-carousel-arrows {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin-top: 0.5rem;
+                                    gap: 1.2rem;
+                                }
+                                #flag-prev-mobile, #flag-next-mobile {
+                                    width: 36px !important;
+                                    height: 36px !important;
+                                    min-width: 36px !important;
+                                    min-height: 36px !important;
+                                    border-radius: 50% !important;
+                                    border: 1.5px solid #DC3545 !important;
+                                    background: #fff !important;
+                                    box-shadow: 0 2px 8px rgba(220,53,69,0.08) !important;
+                                    display: flex !important;
+                                    align-items: center !important;
+                                    justify-content: center !important;
+                                    padding: 0 !important;
+                                    transition: box-shadow 0.2s !important;
+                                }
+                                #flag-prev-mobile svg, #flag-next-mobile svg {
+                                    width: 24px !important;
+                                    height: 24px !important;
+                                }
+                                #flag-prev-mobile:active, #flag-next-mobile:active {
+                                    box-shadow: 0 1px 2px rgba(220,53,69,0.12) !important;
+                                }
+                                .flag-arrow-desktop {
+                                    display: none !important;
+                                }
+                                #flag-prev-mobile, #flag-next-mobile {
+                                    display: flex !important;
+                                }
+                            }
+                            @media screen and (min-width: 769px) {
+                                .flag-carousel-arrows {
+                                    display: none !important;
+                                }
+                                #flag-prev-mobile, #flag-next-mobile {
+                                    display: none !important;
+                                }
+                            }
+                        </style>
+            </div>
+        </section>
+
+        <script>
+            // Flag carousel navigation
+            const carousel = document.getElementById('flag-carousel');
+            const prevBtn = document.getElementById('flag-prev');
+            const nextBtn = document.getElementById('flag-next');
+            const prevBtnMobile = document.getElementById('flag-prev-mobile');
+            const nextBtnMobile = document.getElementById('flag-next-mobile');
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: -250, behavior: 'smooth' });
+                });
+            }
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: 250, behavior: 'smooth' });
+                });
+            }
+            if (prevBtnMobile) {
+                prevBtnMobile.addEventListener('click', () => {
+                    carousel.scrollBy({ left: -250, behavior: 'smooth' });
+                });
+            }
+            if (nextBtnMobile) {
+                nextBtnMobile.addEventListener('click', () => {
+                    carousel.scrollBy({ left: 250, behavior: 'smooth' });
+                });
+            }
+        </script>
+
+    </main>
+
+    <!-- **********SDG color strip START *********** -->
+
+    <div style="height: 25px; display: flex;">
+        <div style="flex: 1; background-color: #E5243B;"></div>
+        <div style="flex: 1; background-color: #DDA63A;"></div>
+        <div style="flex: 1; background-color: #4C9F38;"></div>
+        <div style="flex: 1; background-color: #C5192D;"></div>
+        <div style="flex: 1; background-color: #FF3A21;"></div>
+        <div style="flex: 1; background-color: #26BDE2;"></div>
+        <div style="flex: 1; background-color: #FCC30B;"></div>
+        <div style="flex: 1; background-color: #A21942;"></div>
+        <div style="flex: 1; background-color: #FD6925;"></div>
+        <div style="flex: 1; background-color: #DD1367;"></div>
+        <div style="flex: 1; background-color: #FD9D24;"></div>
+        <div style="flex: 1; background-color: #BF8B2E;"></div>
+        <div style="flex: 1; background-color: #3F7E44;"></div>
+        <div style="flex: 1; background-color: #0A97D9;"></div>
+        <div style="flex: 1; background-color: #56C02B;"></div>
+        <div style="flex: 1; background-color: #00689D;"></div>
+        <div style="flex: 1; background-color: #19486A;"></div>
+    </div>
+
+    <!-- ++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++-->
+
+    <footer class="footer">
+        <div class="grid-x">
+            <div class="cell medium-10 medium-offset-1">
+                <div class="grid-x footer-top">
+                    <div class="cell medium-5">
+                        <div class="footer-logo">
+                            <a href="https://www.undp.org">
+                                <img src="../assets/img/undp-logo-white.svg" alt="UNDP Logo" />
+                            </a>
+                            <h5 tabindex="0">
+                                United Nations
+                                <br />
+                                Development Programme
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="cell medium-5 show-large">
+                        <ul class="footer-icons">
+
+                            <li><a href="https://twitter.com/undp/" class="twitter" title="Twitter">twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/undp/" class="linkedin"
+                                    title="LinkedIn">linkedIn</a></li>
+                            <li><a href="https://www.facebook.com/UNDP/" class="facebook"
+                                    title="Facebook">facebook</a></li>
+                            <li>
+                                <a href="https://www.instagram.com/UNDP/" class="instagram"
+                                    title="Instagram">instagram</a>
+                            </li>
+
+                            <li><a href="https://www.youtube.com/UNDP/" class="youtube" title="Youtube">youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-x footer-bottom">
+                    <div class="cell medium-5">
+                        <p tabindex="0">© 2025 United Nations Development Programme</p>
+                    </div>
+                    <div class="cell medium-6">
+                        <ul class="footer-lists">
+                            <li><a href="https://www.undp.org/accountability/audit/investigations">Report fraud,
+                                    abuse, misconduct</a></li>
+                            <li><a
+                                    href="https://www.undp.org/accountability/audit/social-and-environmental-compliance-review-and-stakeholder-response-mechanism">Submit
+                                    social or environmental complaint</a></li>
+                            <li><a href="https://www.undp.org/scam-alert">Scam alert</a></li>
+                            <li><a href="https://www.undp.org/copyright-terms-use">Terms of use</a></li>
+                        </ul>
+                        <div class="show-small">
+                            <ul class="footer-icons">
+
+                                <li><a href="https://twitter.com/undp/" class="twitter" title="Twitter">twitter</a>
+                                </li>
+                                <li><a href="https://www.linkedin.com/company/undp/" class="linkedin"
+                                        title="LinkedIn">linkedIn</a></li>
+                                <li><a href="https://www.facebook.com/UNDP/" class="facebook"
+                                        title="Facebook">facebook</a></li>
+                                <li>
+                                    <a href="https://www.instagram.com/UNDP/" class="instagram"
+                                        title="Instagram">instagram</a>
+                                </li>
+
+                                <li><a href="https://www.youtube.com/UNDP/" class="youtube"
+                                        title="Youtube">youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/modal.min.js"></script>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/slider-script.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+    <script>
+        // Swiper initialization (if .stats-slider exists)
+        $(function () {
+            if (typeof swiper === "function" && $('.stats-slider').length) {
+                swiper('.stats-slider');
+            }
+        });
+    </script>
+
+    <script>
+        // Modal initialization
+        $(function () {
+            if (typeof modal === "function") modal();
+        });
+    </script>
+    
+    <!-- UNDP Visualization Scripts -->
+    <script defer="defer" type="module" src="https://viz-tool.data.undp.org/index.js"></script>
+    
+    <script>
+        // Fix UNDP tooltip wrapping after embed loads
+        setTimeout(function() {
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    mutation.addedNodes.forEach(function(node) {
+                        if (node.nodeType === 1) {
+                            // Target SVG tooltip rectangles and limit width
+                            if (node.tagName === 'rect' && node.getAttribute('title') === 'Sharing') {
+                                node.setAttribute('width', '300');
+                            }
+                            // Target any tooltip-like elements
+                            const style = node.getAttribute('style');
+                            if (style && (style.includes('position: absolute') || style.includes('pointer-events'))) {
+                                node.style.whiteSpace = 'normal';
+                                node.style.maxWidth = '300px';
+                                node.style.wordWrap = 'break-word';
+                            }
+                        }
+                    });
+                    
+                    // Also check for attribute changes on existing nodes
+                    if (mutation.type === 'attributes' && mutation.target.tagName === 'rect') {
+                        const rect = mutation.target;
+                        if (rect.getAttribute('title') === 'Sharing') {
+                            const width = parseFloat(rect.getAttribute('width'));
+                            if (width > 300) {
+                                rect.setAttribute('width', '300');
+                            }
+                        }
+                    }
+                });
+            });
+            
+            const embedContainer = document.querySelector('.undp-div-tool-graph-embed');
+            if (embedContainer) {
+                observer.observe(embedContainer, { 
+                    childList: true, 
+                    subtree: true,
+                    attributes: true,
+                    attributeFilter: ['width', 'style']
+                });
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
